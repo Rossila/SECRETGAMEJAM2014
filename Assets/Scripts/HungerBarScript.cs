@@ -16,7 +16,7 @@ public class HungerBarScript : MonoBehaviour {
 
 	// make slider white for tinting
 	public GUIStyle energySlider;
-	private int sliderHeight = 40;
+	private int sliderHeight = 30;
 	private int sliderWidth = 5;
 
 	// Use this for initialization
@@ -31,10 +31,10 @@ public class HungerBarScript : MonoBehaviour {
 
 	void OnGUI() {
 		GUI.BeginGroup (new Rect (offset.x, offset.y, maxLength, sliderHeight));
-		GUI.backgroundColor = Color.red;
+		GUI.backgroundColor = Color.blue;
 
 		// energy slider
-		GUI.Box(new Rect(length, 0, 10, sliderHeight), "", energySlider);
+		GUI.Box(new Rect(length, 0, sliderWidth, sliderHeight), "", energySlider);
 
 		GUI.EndGroup();
 	}
