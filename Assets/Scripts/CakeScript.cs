@@ -21,8 +21,8 @@ public class CakeScript : MonoBehaviour {
 		return Physics2D.Raycast(currentPosition + Vector2.right*0.73f, Vector2.right, 0.1f);
 	}
 	
-	void OnCollisionEnter2D(Collision2D other){
-		if ((other.gameObject.tag == "rabbit")) {// && hitWall ()) {
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.gameObject.tag == "rabbit") {
 			Destroy (gameObject);
 		} 
 	}
@@ -39,7 +39,6 @@ public class CakeScript : MonoBehaviour {
 		}
 		else
 		{
-			
 			// 4 - Out of the camera ? Destroy the game object.
 			if (renderer.IsVisibleFrom(Camera.main) == false)
 			{
