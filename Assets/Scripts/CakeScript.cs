@@ -3,6 +3,8 @@ using System.Collections;
 
 public class CakeScript : MonoBehaviour {
 	private bool hasSpawn;
+	public float massIncrement;
+	public float scaleIncrement;
 
 	// Use this for initialization
 	void Start () {
@@ -14,17 +16,13 @@ public class CakeScript : MonoBehaviour {
 		// -- collider
 		collider2D.enabled = false;
 	}
-
-	bool hitWall()
-	{
-		Vector2 currentPosition = new Vector2 (transform.position.x, transform.position.y);
-		return Physics2D.Raycast(currentPosition + Vector2.right*0.73f, Vector2.right, 0.1f);
-	}
 	
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.gameObject.tag == "rabbit") {
-			Destroy (gameObject);
-		} 
+		if (other.gameObject.tag == "rabbit"){
+			other.gameObject.rigidbody2D.mass += massIncrement;
+			other.gameObject.transform.localScale += new Vector3(scaleIncrement, scaleIncrement, 0);
+		}
+		gameObject.SetActive(false);
 	}
 
 	// Update is called once per frame
@@ -42,7 +40,7 @@ public class CakeScript : MonoBehaviour {
 			// 4 - Out of the camera ? Destroy the game object.
 			if (renderer.IsVisibleFrom(Camera.main) == false)
 			{
-				Destroy(gameObject);
+				gameObject.SetActive (false);
 			}
 		}
 	}
