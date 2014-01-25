@@ -34,6 +34,13 @@ public class RabbitScript : MonoBehaviour {
 		rigidbody2D.velocity = new Vector2 (constantSpeed.x / rigidbody2D.mass, rigidbody2D.velocity.y);
 	}
 
+	bool hitWall()
+	{
+		Vector2 currentPosition = new Vector2 (transform.position.x, transform.position.y);
+		RaycastHit2D hit = Physics2D.Raycast(currentPosition + Vector2.right*0.73f, Vector2.right, 0.1f);
+		Debug.Log (hit.collider.tag);
+		return hit;
+	}
 
 	void OnCollisionEnter2D(Collision2D other){
 		if ((other.gameObject.tag == "ground")) {
@@ -53,4 +60,5 @@ public class RabbitScript : MonoBehaviour {
 	{
 		rigidbody2D.velocity = Vector2.zero;
 	}
+	
 }
