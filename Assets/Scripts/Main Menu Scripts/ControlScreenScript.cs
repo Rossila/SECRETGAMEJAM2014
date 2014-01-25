@@ -1,20 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ExitGameScript : MonoBehaviour {
-	
+public class ControlScreenScript : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
 		MainMenuScript.MenuScreen += HandleMenuScreen;
 		MainMenuScript.ControlScreen += HandleControlScreen;
-	}
-
-	void HandleControlScreen () {
 		gameObject.SetActive (false);
 	}
 
-	void HandleMenuScreen () {
+	void HandleControlScreen ()
+	{
 		gameObject.SetActive (true);
+	}
+
+	void HandleMenuScreen ()
+	{
+		gameObject.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -22,7 +25,8 @@ public class ExitGameScript : MonoBehaviour {
 	
 	}
 
-	void OnMouseDown () {
-		Application.Quit ();
+	void OnMouseDown() {
+		print ("Back to main menu");
+		MainMenuScript.TriggerMainMenu ();
 	}
 }
