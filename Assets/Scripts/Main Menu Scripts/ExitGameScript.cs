@@ -14,6 +14,6 @@ public class ExitGameScript : MonoBehaviour {
 	}
 
 	void OnMouseDown () {
-		print ("Exit Game!");
+		Application.Quit ();
 	}
 }
