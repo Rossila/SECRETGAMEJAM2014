@@ -34,11 +34,19 @@ public class RabbitScript : MonoBehaviour {
 		rigidbody2D.velocity = new Vector2 (constantSpeed.x / rigidbody2D.mass, rigidbody2D.velocity.y);
 	}
 
+	bool hitWall()
+	{
+		Vector2 currentPosition = new Vector2 (transform.position.x, transform.position.y);
+		return Physics2D.Raycast(currentPosition + Vector2.right*0.73f, Vector2.right, 0.1f);
+	}
 
 	void OnCollisionEnter2D(Collision2D other){
-		if ((other.gameObject.tag == "ground")) {
-			onGround = true;
+		if ((other.gameObject.tag == "ground") && hitWall ()) {
+			Destroy (gameObject);
 		} 
+		else if (other.gameObject.tag == "ground") {
+			onGround = true;
+		}
 
 	}
 
