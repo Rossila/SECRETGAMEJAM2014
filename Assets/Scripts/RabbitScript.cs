@@ -79,7 +79,7 @@ public class RabbitScript : MonoBehaviour {
 			ws[0].BustWall();
 		}
 
-		if (other.gameObject.tag == "tree" && rigidbody2D.mass >= maxToPassTree) {
+		if (other.gameObject.tag == "tree" && rigidbody2D.mass <= maxToPassTree) {
 			TreeScript[] ts = other.gameObject.GetComponents<TreeScript>();
 			ts[0].MovePastTree();
 		}
