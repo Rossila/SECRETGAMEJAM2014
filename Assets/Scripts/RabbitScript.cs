@@ -16,6 +16,8 @@ public class RabbitScript : MonoBehaviour {
 	public float tooMuchMass;
 	public float tooLittleMass;
 
+	public float enoughToBreakWall;
+
 	private bool onGround;
 	private Vector2 startPosition;
 
@@ -71,6 +73,11 @@ public class RabbitScript : MonoBehaviour {
 			onGround = true;
 		} 
 
+		if (other.gameObject.tag == "wall" && rigidbody2D.mass >= enoughToBreakWall) {
+			WallScript[] ws = other.gameObject.GetComponents<WallScript>();
+			ws[0].BustWall();
+		}
+		
 	}
 
 	void OnTriggerEnter2D(Collider2D collider) {

@@ -67,6 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17302a8143dc9ee45bd1ece4f89a3809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bustedWall: {fileID: 21300000, guid: f002803e65b53a04ea64e7add4570098, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
