@@ -70,10 +70,17 @@ public class ScrollingScript : MonoBehaviour
 	
 	void Update()
 	{
-		float newSpeedX = speed.x * (1 / GameObject.FindGameObjectWithTag ("rabbit").rigidbody2D.mass);
-		float newSpeedY = speed.y * (1 / GameObject.FindGameObjectWithTag ("rabbit").rigidbody2D.mass);
+		GameObject rabbit = GameObject.FindGameObjectWithTag ("rabbit");
+
+		if (rabbit == null) {
+			return;
+		}
+
+		float newSpeedX = speed.x * (1 / rabbit.rigidbody2D.mass);
+		float newSpeedY = speed.y * (1 / rabbit.rigidbody2D.mass);
 
 		Debug.Log (rabbitPrefab.rigidbody2D.mass);
+
 		// Movement
 		if (isLinkedToRabbit) {
 			speed.x = (1.8f - rabbitPrefab.rigidbody2D.mass) * speedFactor;

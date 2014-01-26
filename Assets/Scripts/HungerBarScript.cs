@@ -16,7 +16,7 @@ public class HungerBarScript : MonoBehaviour {
 
 	// make slider white for tinting
 	public GUIStyle energySlider;
-	private int sliderHeight = 30;
+	private int sliderHeight = 25;
 	private int sliderWidth = 5;
 
 	// Use this for initialization
@@ -28,9 +28,10 @@ public class HungerBarScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		print ("Adjusting: "+GameObject.FindGameObjectWithTag ("rabbit").rigidbody2D.mass);
-		AdjustCurrEnergy (GameObject.FindGameObjectWithTag("rabbit").rigidbody2D.mass);
-
+		GameObject rabbit = GameObject.FindGameObjectWithTag ("rabbit");
+		if (rabbit != null) {
+			AdjustCurrEnergy (GameObject.FindGameObjectWithTag("rabbit").rigidbody2D.mass);
+		}
 	}
 
 	void OnGUI() {
