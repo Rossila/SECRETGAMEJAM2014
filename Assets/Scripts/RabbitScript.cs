@@ -22,8 +22,11 @@ public class RabbitScript : MonoBehaviour {
 	private bool onGround;
 	private Vector2 startPosition;
 
+	private Transform camera;
+
 	void Start () 
 	{
+		camera = GameObject.FindGameObjectWithTag("MainCamera").transform;
 		GameManager.GameStart += gameStart;
 		GameManager.GameOver += gameOver;
 		GameManager.GameWin += gameWin;
@@ -33,6 +36,8 @@ public class RabbitScript : MonoBehaviour {
 
 	void Update()
 	{
+		Debug.Log ("Camera position x" + camera.position.x);
+		Debug.Log ("Transform Position x" + transform.position.x);
 		print ("Velocity:"+rigidbody2D.velocity.y);
 		rigidbody2D.mass -= shrinkRate;
 		//gameObject.GetComponent<BoxCollider2D> ().size -= new Vector2 (shrinkRate, shrinkRate);
@@ -46,7 +51,8 @@ public class RabbitScript : MonoBehaviour {
 		//Debug.Log (transform.position.x);
 		if((transform.localPosition.y < gameOverY) ||
 		   //(renderer.IsVisibleFrom(Camera.main) == false) ||
-		   (transform.localPosition.x < gameOverX) ||
+		   //(transform.localPosition.x < gameOverX) ||
+		   (Mathf.Abs(camera.position.x - transform.position.x) > gameOverX) ||
 		   (rigidbody2D.mass > tooMuchMass) ||
 		   (rigidbody2D.mass < tooLittleMass)){
 			GameManager.TriggerGameOver();

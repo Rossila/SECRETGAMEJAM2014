@@ -287,7 +287,6 @@ GameObject:
   - 212: {fileID: 61586030}
   - 50: {fileID: 61586029}
   - 61: {fileID: 61586028}
-  - 114: {fileID: 61586027}
   m_Layer: 0
   m_Name: GroundRight
   m_TagString: ground
@@ -295,18 +294,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &61586027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 258bef484ebc11a418f9d6cc0f93d814,
-    type: 2}
-  m_PrefabInternal: {fileID: 1747636664}
-  m_GameObject: {fileID: 61586026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &61586028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -587,7 +574,6 @@ GameObject:
   - 212: {fileID: 126045279}
   - 50: {fileID: 126045278}
   - 61: {fileID: 126045277}
-  - 114: {fileID: 126045281}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -658,18 +644,6 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
---- !u!114 &126045281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 1741688249}
-  m_GameObject: {fileID: 126045276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &154517241
 Prefab:
   m_ObjectHideFlags: 0
@@ -1496,7 +1470,6 @@ GameObject:
   - 212: {fileID: 290128468}
   - 50: {fileID: 290128467}
   - 61: {fileID: 290128466}
-  - 114: {fileID: 290128470}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -1567,18 +1540,6 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
---- !u!114 &290128470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 2005008878}
-  m_GameObject: {fileID: 290128465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &294454421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,7 +1551,6 @@ GameObject:
   - 212: {fileID: 294454425}
   - 50: {fileID: 294454424}
   - 61: {fileID: 294454423}
-  - 114: {fileID: 294454422}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -1598,18 +1558,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &294454422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 232162828}
-  m_GameObject: {fileID: 294454421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &294454423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1956,7 +1904,6 @@ GameObject:
   - 212: {fileID: 376042919}
   - 50: {fileID: 376042918}
   - 61: {fileID: 376042917}
-  - 114: {fileID: 376042916}
   m_Layer: 0
   m_Name: GroundLeft
   m_TagString: ground
@@ -1964,18 +1911,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &376042916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 02a09d668eb5694438c76223738cddde,
-    type: 2}
-  m_PrefabInternal: {fileID: 1348576816}
-  m_GameObject: {fileID: 376042915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &376042917
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2197,7 +2132,6 @@ GameObject:
   - 212: {fileID: 525464001}
   - 50: {fileID: 525464000}
   - 61: {fileID: 525463999}
-  - 114: {fileID: 525463998}
   m_Layer: 0
   m_Name: GroundLeft
   m_TagString: ground
@@ -2205,18 +2139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &525463998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 02a09d668eb5694438c76223738cddde,
-    type: 2}
-  m_PrefabInternal: {fileID: 1941773030}
-  m_GameObject: {fileID: 525463997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &525463999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2347,7 +2269,6 @@ GameObject:
   - 212: {fileID: 539823014}
   - 50: {fileID: 539823013}
   - 61: {fileID: 539823012}
-  - 114: {fileID: 539823011}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -2355,18 +2276,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &539823011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 1494171835}
-  m_GameObject: {fileID: 539823010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &539823012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2453,7 +2362,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 541288565}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.6377335, y: 2.48128939, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 622176318}
@@ -2484,7 +2393,6 @@ GameObject:
   - 212: {fileID: 557455847}
   - 50: {fileID: 557455846}
   - 61: {fileID: 557455845}
-  - 114: {fileID: 557455844}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -2492,18 +2400,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &557455844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 321093827}
-  m_GameObject: {fileID: 557455843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &557455845
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2684,7 +2580,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &591834918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2828,7 +2724,6 @@ GameObject:
   - 212: {fileID: 608893628}
   - 50: {fileID: 608893627}
   - 61: {fileID: 608893626}
-  - 114: {fileID: 608893630}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -2899,18 +2794,6 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
---- !u!114 &608893630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 1085043426}
-  m_GameObject: {fileID: 608893625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &622176317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2939,7 +2822,7 @@ Transform:
   m_PrefabInternal: {fileID: 1787137214}
   m_GameObject: {fileID: 622176317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.9767981, y: -3.48662758, z: 0}
+  m_LocalPosition: {x: -4.82579565, y: -.883419216, z: 0}
   m_LocalScale: {x: .400000006, y: .400000006, z: 1}
   m_Children: []
   m_Father: {fileID: 541288566}
@@ -2959,7 +2842,7 @@ MonoBehaviour:
   jumpSpeed: {x: 0, y: 1000}
   constantSpeed: {x: 0, y: 0}
   gameOverY: -10
-  gameOverX: 0
+  gameOverX: 13
   startMass: 1
   shrinkRate: .00100000005
   tooMuchMass: 2
@@ -3513,7 +3396,6 @@ GameObject:
   - 212: {fileID: 762233494}
   - 50: {fileID: 762233493}
   - 61: {fileID: 762233492}
-  - 114: {fileID: 762233491}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -3521,18 +3403,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &762233491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 696592547}
-  m_GameObject: {fileID: 762233490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &762233492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3691,7 +3561,6 @@ GameObject:
   - 212: {fileID: 778095861}
   - 50: {fileID: 778095860}
   - 61: {fileID: 778095859}
-  - 114: {fileID: 778095858}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -3699,18 +3568,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &778095858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 1928919205}
-  m_GameObject: {fileID: 778095857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &778095859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3785,7 +3642,6 @@ GameObject:
   - 212: {fileID: 792129715}
   - 50: {fileID: 792129714}
   - 61: {fileID: 792129713}
-  - 114: {fileID: 792129712}
   m_Layer: 0
   m_Name: GroundLeft
   m_TagString: ground
@@ -3793,18 +3649,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &792129712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 02a09d668eb5694438c76223738cddde,
-    type: 2}
-  m_PrefabInternal: {fileID: 537516515}
-  m_GameObject: {fileID: 792129711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &792129713
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4102,7 +3946,6 @@ GameObject:
   - 212: {fileID: 875104785}
   - 50: {fileID: 875104784}
   - 61: {fileID: 875104783}
-  - 114: {fileID: 875104787}
   m_Layer: 0
   m_Name: GroundRight
   m_TagString: ground
@@ -4173,18 +4016,6 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
---- !u!114 &875104787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 258bef484ebc11a418f9d6cc0f93d814,
-    type: 2}
-  m_PrefabInternal: {fileID: 676523098}
-  m_GameObject: {fileID: 875104782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &883786168
 GameObject:
   m_ObjectHideFlags: 0
@@ -4298,7 +4129,6 @@ GameObject:
   - 212: {fileID: 904569313}
   - 50: {fileID: 904569312}
   - 61: {fileID: 904569311}
-  - 114: {fileID: 904569315}
   m_Layer: 0
   m_Name: GroundRight
   m_TagString: ground
@@ -4369,18 +4199,6 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
---- !u!114 &904569315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 258bef484ebc11a418f9d6cc0f93d814,
-    type: 2}
-  m_PrefabInternal: {fileID: 1237986833}
-  m_GameObject: {fileID: 904569310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &934564256
 GameObject:
   m_ObjectHideFlags: 0
@@ -4640,7 +4458,6 @@ GameObject:
   - 212: {fileID: 992292440}
   - 50: {fileID: 992292439}
   - 61: {fileID: 992292438}
-  - 114: {fileID: 992292437}
   m_Layer: 0
   m_Name: GroundLeft
   m_TagString: ground
@@ -4648,18 +4465,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &992292437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 02a09d668eb5694438c76223738cddde,
-    type: 2}
-  m_PrefabInternal: {fileID: 1470162968}
-  m_GameObject: {fileID: 992292436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &992292438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4734,7 +4539,6 @@ GameObject:
   - 212: {fileID: 996530607}
   - 50: {fileID: 996530606}
   - 61: {fileID: 996530605}
-  - 114: {fileID: 996530604}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -4742,18 +4546,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &996530604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 2102238356}
-  m_GameObject: {fileID: 996530603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &996530605
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4923,7 +4715,6 @@ GameObject:
   - 212: {fileID: 1028268511}
   - 50: {fileID: 1028268510}
   - 61: {fileID: 1028268509}
-  - 114: {fileID: 1028268508}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -4931,18 +4722,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1028268508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 672555955}
-  m_GameObject: {fileID: 1028268507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1028268509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5017,7 +4796,6 @@ GameObject:
   - 212: {fileID: 1033425619}
   - 50: {fileID: 1033425621}
   - 61: {fileID: 1033425618}
-  - 114: {fileID: 1033425622}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -5088,18 +4866,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!114 &1033425622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 112843954}
-  m_GameObject: {fileID: 1033425617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1062727428
 Prefab:
   m_ObjectHideFlags: 0
@@ -5243,7 +5009,6 @@ GameObject:
   - 212: {fileID: 1112040483}
   - 50: {fileID: 1112040482}
   - 61: {fileID: 1112040481}
-  - 114: {fileID: 1112040480}
   m_Layer: 0
   m_Name: GroundLeft
   m_TagString: ground
@@ -5251,18 +5016,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1112040480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 02a09d668eb5694438c76223738cddde,
-    type: 2}
-  m_PrefabInternal: {fileID: 1768425138}
-  m_GameObject: {fileID: 1112040479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1112040481
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5801,7 +5554,6 @@ GameObject:
   - 212: {fileID: 1230107089}
   - 50: {fileID: 1230107088}
   - 61: {fileID: 1230107087}
-  - 114: {fileID: 1230107091}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -5872,18 +5624,6 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
---- !u!114 &1230107091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 1470792810}
-  m_GameObject: {fileID: 1230107086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1237986833
 Prefab:
   m_ObjectHideFlags: 0
@@ -6033,7 +5773,6 @@ GameObject:
   - 212: {fileID: 1270597829}
   - 50: {fileID: 1270597828}
   - 61: {fileID: 1270597827}
-  - 114: {fileID: 1270597831}
   m_Layer: 0
   m_Name: GroundLeft
   m_TagString: ground
@@ -6104,18 +5843,6 @@ Transform:
   m_LocalScale: {x: .544106841, y: .537605286, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
---- !u!114 &1270597831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 02a09d668eb5694438c76223738cddde,
-    type: 2}
-  m_PrefabInternal: {fileID: 760620547}
-  m_GameObject: {fileID: 1270597826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1274387037
 GameObject:
   m_ObjectHideFlags: 0
@@ -6131,7 +5858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1274387038
 Transform:
   m_ObjectHideFlags: 0
@@ -6523,7 +6250,6 @@ GameObject:
   - 212: {fileID: 1356796948}
   - 50: {fileID: 1356796947}
   - 61: {fileID: 1356796946}
-  - 114: {fileID: 1356796945}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -6531,18 +6257,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1356796945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 209988174}
-  m_GameObject: {fileID: 1356796944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1356796946
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6617,7 +6331,6 @@ GameObject:
   - 212: {fileID: 1357865254}
   - 50: {fileID: 1357865253}
   - 61: {fileID: 1357865252}
-  - 114: {fileID: 1357865256}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -6688,18 +6401,6 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
---- !u!114 &1357865256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 1577874694}
-  m_GameObject: {fileID: 1357865251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1362557576
 GameObject:
   m_ObjectHideFlags: 0
@@ -6711,7 +6412,6 @@ GameObject:
   - 212: {fileID: 1362557580}
   - 50: {fileID: 1362557579}
   - 61: {fileID: 1362557578}
-  - 114: {fileID: 1362557577}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -6719,18 +6419,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1362557577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 957138603}
-  m_GameObject: {fileID: 1362557576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1362557578
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7220,7 +6908,6 @@ GameObject:
   - 212: {fileID: 1415434863}
   - 50: {fileID: 1415434862}
   - 61: {fileID: 1415434861}
-  - 114: {fileID: 1415434860}
   m_Layer: 0
   m_Name: GroundLeft
   m_TagString: ground
@@ -7239,18 +6926,6 @@ Transform:
   m_LocalScale: {x: .474931151, y: .474930823, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
---- !u!114 &1415434860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 02a09d668eb5694438c76223738cddde,
-    type: 2}
-  m_PrefabInternal: {fileID: 1539668897}
-  m_GameObject: {fileID: 1415434858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1415434861
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7482,7 +7157,6 @@ GameObject:
   - 212: {fileID: 1451646048}
   - 50: {fileID: 1451646050}
   - 61: {fileID: 1451646047}
-  - 114: {fileID: 1451646051}
   m_Layer: 0
   m_Name: GroundRight
   m_TagString: ground
@@ -7553,18 +7227,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!114 &1451646051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 258bef484ebc11a418f9d6cc0f93d814,
-    type: 2}
-  m_PrefabInternal: {fileID: 2084067906}
-  m_GameObject: {fileID: 1451646046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1470162968
 Prefab:
   m_ObjectHideFlags: 0
@@ -8246,7 +7908,6 @@ GameObject:
   - 212: {fileID: 1582402779}
   - 50: {fileID: 1582402778}
   - 61: {fileID: 1582402777}
-  - 114: {fileID: 1582402776}
   m_Layer: 0
   m_Name: GroundLeft
   m_TagString: ground
@@ -8254,18 +7915,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1582402776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 02a09d668eb5694438c76223738cddde,
-    type: 2}
-  m_PrefabInternal: {fileID: 1934110239}
-  m_GameObject: {fileID: 1582402775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1582402777
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8512,7 +8161,6 @@ GameObject:
   - 212: {fileID: 1683428387}
   - 50: {fileID: 1683428386}
   - 61: {fileID: 1683428385}
-  - 114: {fileID: 1683428384}
   m_Layer: 0
   m_Name: GroundRight
   m_TagString: ground
@@ -8520,18 +8168,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1683428384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 258bef484ebc11a418f9d6cc0f93d814,
-    type: 2}
-  m_PrefabInternal: {fileID: 1178500182}
-  m_GameObject: {fileID: 1683428383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1683428385
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9007,11 +8643,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 15.9767981
+      value: -4.82579565
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.48662758
+      value: -.883419216
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9121,6 +8757,10 @@ Prefab:
       propertyPath: maxToPassTree
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
+      propertyPath: gameOverX
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
   m_RootGameObject: {fileID: 622176317}
@@ -9137,7 +8777,6 @@ GameObject:
   - 212: {fileID: 1807924298}
   - 50: {fileID: 1807924297}
   - 61: {fileID: 1807924296}
-  - 114: {fileID: 1807924295}
   m_Layer: 0
   m_Name: GroundRight
   m_TagString: ground
@@ -9145,18 +8784,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1807924295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 258bef484ebc11a418f9d6cc0f93d814,
-    type: 2}
-  m_PrefabInternal: {fileID: 284695214}
-  m_GameObject: {fileID: 1807924294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1807924296
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9319,7 +8946,6 @@ GameObject:
   - 212: {fileID: 1855975886}
   - 50: {fileID: 1855975885}
   - 61: {fileID: 1855975884}
-  - 114: {fileID: 1855975883}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -9327,18 +8953,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1855975883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 2053998084}
-  m_GameObject: {fileID: 1855975882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1855975884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9413,7 +9027,6 @@ GameObject:
   - 212: {fileID: 1865360789}
   - 50: {fileID: 1865360788}
   - 61: {fileID: 1865360787}
-  - 114: {fileID: 1865360786}
   m_Layer: 0
   m_Name: GroundLeft
   m_TagString: ground
@@ -9421,18 +9034,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1865360786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 02a09d668eb5694438c76223738cddde,
-    type: 2}
-  m_PrefabInternal: {fileID: 1973096615}
-  m_GameObject: {fileID: 1865360785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1865360787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9591,7 +9192,6 @@ GameObject:
   - 212: {fileID: 1925957983}
   - 50: {fileID: 1925957982}
   - 61: {fileID: 1925957981}
-  - 114: {fileID: 1925957980}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -9599,18 +9199,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1925957980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 1192354013}
-  m_GameObject: {fileID: 1925957979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1925957981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10072,7 +9660,6 @@ GameObject:
   - 212: {fileID: 2020628655}
   - 50: {fileID: 2020628654}
   - 61: {fileID: 2020628653}
-  - 114: {fileID: 2020628652}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -10080,18 +9667,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2020628652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 1146826000}
-  m_GameObject: {fileID: 2020628651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2020628653
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10254,7 +9829,6 @@ GameObject:
   - 212: {fileID: 2065880375}
   - 50: {fileID: 2065880374}
   - 61: {fileID: 2065880373}
-  - 114: {fileID: 2065880372}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -10262,18 +9836,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2065880372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 1809128673}
-  m_GameObject: {fileID: 2065880371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2065880373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10383,7 +9945,6 @@ GameObject:
   - 212: {fileID: 2073700384}
   - 50: {fileID: 2073700383}
   - 61: {fileID: 2073700382}
-  - 114: {fileID: 2073700386}
   m_Layer: 0
   m_Name: GroundRight
   m_TagString: ground
@@ -10454,18 +10015,6 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
---- !u!114 &2073700386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 258bef484ebc11a418f9d6cc0f93d814,
-    type: 2}
-  m_PrefabInternal: {fileID: 1399997053}
-  m_GameObject: {fileID: 2073700381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2084067906
 Prefab:
   m_ObjectHideFlags: 0
@@ -10569,7 +10118,6 @@ GameObject:
   - 212: {fileID: 2088509628}
   - 50: {fileID: 2088509627}
   - 61: {fileID: 2088509626}
-  - 114: {fileID: 2088509625}
   m_Layer: 0
   m_Name: GroundRight
   m_TagString: ground
@@ -10588,18 +10136,6 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
---- !u!114 &2088509625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 258bef484ebc11a418f9d6cc0f93d814,
-    type: 2}
-  m_PrefabInternal: {fileID: 730703636}
-  m_GameObject: {fileID: 2088509623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2088509626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10952,7 +10488,6 @@ GameObject:
   - 212: {fileID: 2144053398}
   - 50: {fileID: 2144053397}
   - 61: {fileID: 2144053396}
-  - 114: {fileID: 2144053395}
   m_Layer: 0
   m_Name: GroundCenter
   m_TagString: ground
@@ -10960,18 +10495,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2144053395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a409291074fff234585dd8841f83fd22,
-    type: 2}
-  m_PrefabInternal: {fileID: 1727690543}
-  m_GameObject: {fileID: 2144053394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2144053396
 BoxCollider2D:
   m_ObjectHideFlags: 0
