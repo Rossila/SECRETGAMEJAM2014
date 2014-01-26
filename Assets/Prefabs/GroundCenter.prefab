@@ -11,10 +11,9 @@ GameObject:
   - 212: {fileID: 21200000}
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
-  - 114: {fileID: 0}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Platform 2
+  m_Name: GroundCenter
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.9541597, y: -6.32969761, z: 0}
+  m_LocalPosition: {x: 13.8990507, y: -5.09267235, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -55,8 +54,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: c60c837d7a4f6554ca444cd9a0c8ae03, type: 2}
   m_IsTrigger: 0
-  m_Size: {x: 8.5, y: 5.4000001}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 6.5, y: .5}
+  m_Center: {x: 0, y: -1}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +88,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300002, guid: d0941ad6e67750c47815dd1af7e55447, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a25569f86c0d7bc44a06a042fde6b648, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
