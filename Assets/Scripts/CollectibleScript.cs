@@ -3,9 +3,8 @@
 public class CollectibleScript : MonoBehaviour {
 	private bool hasSpawn;
 	public float massIncrement;
-	public float scaleIncrement;
 	public AudioClip clip;
-	
+
 	// Use this for initialization
 	void Start () {
 		GameManager.GameStart += gameStart;
@@ -14,12 +13,24 @@ public class CollectibleScript : MonoBehaviour {
 		gameStart ();
 	}
 
+	// get a scale percentage based on the mass
+	float massToScale(float mass) {
+		float maxMass = 1.6f;
+		float minMass = 0.6f;
+		
+		return 1f - (maxMass - mass);
+	}
+
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "rabbit"){
 			AudioSource.PlayClipAtPoint(clip, transform.position);
 			other.gameObject.rigidbody2D.mass += massIncrement;
-			//other.gameObject.GetComponent<BoxCollider2D>().size += new Vector2(scaleIncrement/2, scaleIncrement/2);
-			other.gameObject.transform.localScale += new Vector3(scaleIncrement/2, scaleIncrement/2, 0);
+			float scale = massToScale(other.gameObject.rigidbody2D.mass);
+			//other.gameObject.transform.localScale = other.gameObject.GetComponent<RabbitScript>().maxRabbit * scale;
+			float localScaleX = Mathf.Lerp (other.gameObject.transform.localScale.x, other.gameObject.GetComponent<RabbitScript>().maxRabbit.x * scale, Time.deltaTime);
+			float localScaleY = Mathf.Lerp (other.gameObject.transform.localScale.y, other.gameObject.GetComponent<RabbitScript>().maxRabbit.y * scale, Time.deltaTime);
+			float localScaleZ = Mathf.Lerp (other.gameObject.transform.localScale.z, other.gameObject.GetComponent<RabbitScript>().maxRabbit.z * scale, Time.deltaTime);
+			other.gameObject.transform.localScale = new Vector3(localScaleX, localScaleY, localScaleZ);
 		}
 		gameObject.SetActive(false);
 	}
