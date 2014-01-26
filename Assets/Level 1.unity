@@ -2389,6 +2389,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 607583141}
+  - 114: {fileID: 607583142}
   m_Layer: 0
   m_Name: Render
   m_TagString: Untagged
@@ -2408,6 +2409,23 @@ Transform:
   m_Children:
   - {fileID: 1346096484}
   m_Father: {fileID: 0}
+--- !u!114 &607583142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607583140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98e451fe5c2b41d0a68ba82083d756c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xMargin: 1
+  yMargin: .800000012
+  xSmooth: 8
+  ySmooth: 1
+  maxXAndY: {x: 0, y: 5}
+  minXAndY: {x: 0, y: -5}
 --- !u!1 &608893625
 GameObject:
   m_ObjectHideFlags: 0
@@ -5187,7 +5205,6 @@ GameObject:
   - 92: {fileID: 1346096482}
   - 124: {fileID: 1346096481}
   - 81: {fileID: 1346096480}
-  - 114: {fileID: 1346096485}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5257,17 +5274,6 @@ Transform:
   m_Children:
   - {fileID: 1378240059}
   m_Father: {fileID: 607583141}
---- !u!114 &1346096485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1346096479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1ff7ff4ce484f1aad8887efed74b11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1347270000
 GameObject:
   m_ObjectHideFlags: 0
