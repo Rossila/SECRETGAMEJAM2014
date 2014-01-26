@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1e1ec7915fd476fa6b21935e4128d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedFactor: 10
   speed: {x: 5, y: 5}
   direction: {x: -1, y: 0}
   isLooping: 0
@@ -952,6 +953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1e1ec7915fd476fa6b21935e4128d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedFactor: 5
   speed: {x: 5, y: 5}
   direction: {x: -1, y: 0}
   isLooping: 1
@@ -1402,8 +1404,8 @@ Transform:
   m_PrefabInternal: {fileID: 2104220864}
   m_GameObject: {fileID: 287739045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25, y: -1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 24.2586746, y: 1.153162, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1618568159}
 --- !u!114 &287739047
@@ -1429,7 +1431,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1, y: 4}
+  m_Size: {x: 1, y: 5}
   m_Center: {x: 0, y: 0}
 --- !u!50 &287739049
 Rigidbody2D:
@@ -2031,7 +2033,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 02a09d668eb5694438c76223738cddde, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -5.50732422
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 02a09d668eb5694438c76223738cddde, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2210,7 +2212,7 @@ Transform:
   m_PrefabInternal: {fileID: 415488782}
   m_GameObject: {fileID: 504393973}
   m_LocalRotation: {x: 0, y: 0, z: .00208796654, w: .999997854}
-  m_LocalPosition: {x: -76.92202, y: 5.39029884, z: -5.50732422}
+  m_LocalPosition: {x: -76.92202, y: 5.39029884, z: 0}
   m_LocalScale: {x: .663604677, y: .593849242, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
@@ -2523,6 +2525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1e1ec7915fd476fa6b21935e4128d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedFactor: 5
   speed: {x: 10, y: 10}
   direction: {x: 0, y: 0}
   isLooping: 0
@@ -2725,7 +2728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &591834918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3022,17 +3025,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3102de1530db2f04b99ce9419cef731f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startScale: {x: .5, y: .5, z: 0}
-  jumpSpeed: {x: 0, y: 1000}
+  startScale: {x: .5, y: .5, z: 2}
+  jumpSpeed: {x: 0, y: 1500}
   constantSpeed: {x: 0, y: 0}
   gameOverY: -10
   gameOverX: 13
-  startMass: 1
-  shrinkRate: .00100000005
-  tooMuchMass: 2
-  tooLittleMass: 0
-  minToBreakWall: 1
+  startMass: 1.5
+  shrinkRate: .000500000024
+  tooMuchMass: 1.60000002
+  tooLittleMass: .600000024
+  minToBreakWall: .5
   maxToPassTree: 1
+  speedLimitY: 35
 --- !u!61 &622176320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4775,8 +4779,8 @@ Transform:
   m_PrefabInternal: {fileID: 1254874983}
   m_GameObject: {fileID: 1018939410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 63.1631813, y: -.0708961487, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 67.3437805, y: -2.23867869, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1618568159}
 --- !u!114 &1018939412
@@ -4802,7 +4806,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1, y: 4}
+  m_Size: {x: 1, y: 5}
   m_Center: {x: 0, y: 0}
 --- !u!50 &1018939414
 Rigidbody2D:
@@ -5138,6 +5142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1e1ec7915fd476fa6b21935e4128d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedFactor: 10
   speed: {x: 5, y: 5}
   direction: {x: -1, y: 0}
   isLooping: 0
@@ -5877,11 +5882,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 63.1631813
+      value: 67.3437805
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.0708961487
+      value: -2.23867869
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5933,7 +5938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1274387038
 Transform:
   m_ObjectHideFlags: 0
@@ -8205,6 +8210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1e1ec7915fd476fa6b21935e4128d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedFactor: 10
   speed: {x: 5, y: 5}
   direction: {x: -1, y: 0}
   isLooping: 0
@@ -8375,6 +8381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1e1ec7915fd476fa6b21935e4128d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedFactor: 10
   speed: {x: 5, y: 5}
   direction: {x: -1, y: 0}
   isLooping: 0
@@ -8798,7 +8805,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: jumpSpeed.y
-      value: 1000
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: jumpSpeed.x
@@ -8814,7 +8821,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: startMass
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: m_TagString
@@ -8822,11 +8829,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: tooMuchMass
-      value: 2
+      value: 1.60000002
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: tooLittleMass
-      value: 0
+      value: .600000024
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: gameOverY
@@ -8834,7 +8841,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: shrinkRate
-      value: .00100000005
+      value: .000500000024
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: m_GravityScale
@@ -8866,7 +8873,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: minToBreakWall
-      value: 1
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: maxToPassTree
@@ -8878,7 +8885,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: startScale.z
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
+      propertyPath: speedLimitY
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
@@ -9528,6 +9539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1e1ec7915fd476fa6b21935e4128d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedFactor: 5
   speed: {x: 1, y: 1}
   direction: {x: -1, y: 0}
   isLooping: 1
@@ -10384,11 +10396,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 25
+      value: 24.2586746
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: 1.153162
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
       propertyPath: m_LocalPosition.z

@@ -19,6 +19,8 @@ public class RabbitScript : MonoBehaviour {
 	public float minToBreakWall;
 	public float maxToPassTree;
 
+	public float speedLimitY;
+
 	private bool onGround;
 	private Vector2 startPosition;
 
@@ -40,6 +42,9 @@ public class RabbitScript : MonoBehaviour {
 
 	void Update()
 	{
+		if (rigidbody2D.velocity.y > speedLimitY) {
+			rigidbody2D.velocity = rigidbody2D.velocity.normalized * speedLimitY;
+		}
 		rigidbody2D.mass -= shrinkRate;
 		//gameObject.GetComponent<BoxCollider2D> ().size -= new Vector2 (shrinkRate, shrinkRate);
 		if(transform.localScale.x > 0)
@@ -83,7 +88,6 @@ public class RabbitScript : MonoBehaviour {
 
 		float boxColliderSize = (GetComponent <BoxCollider2D>().size.y/2.0f)*transform.localScale.y;
 		float otherColliderSize = (other.gameObject.GetComponent<BoxCollider2D> ().size.y/2.0f) * other.gameObject.transform.localScale.y;
-
 		if ((other.gameObject.tag == "ground") && rigidbody2D.velocity.y<=15 && transform.position.y + boxColliderSize >= otherColliderSize + other.gameObject.transform.position.y ) {
 			onGround = true;
 		} 

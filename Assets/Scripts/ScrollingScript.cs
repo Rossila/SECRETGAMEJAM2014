@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class ScrollingScript : MonoBehaviour
 {
-	private float speedFactor = 5;
+	public float speedFactor = 5;
 	/// <summary>
 	/// Scrolling speed
 	/// </summary>
@@ -83,7 +83,8 @@ public class ScrollingScript : MonoBehaviour
 
 		// Movement
 		if (isLinkedToRabbit) {
-			speed.x = (1.8f - rabbitPrefab.rigidbody2D.mass) * speedFactor;
+			//speed.x = (1f- Mathf.Log(1.6f - rabbitPrefab.rigidbody2D.mass)) * speedFactor;
+			speed.x = Mathf.Sqrt(1.6f - rabbitPrefab.rigidbody2D.mass) * speedFactor;
 		}
 		Vector3 movement = new Vector3(
 			newSpeedX * direction.x,
