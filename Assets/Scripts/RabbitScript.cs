@@ -23,6 +23,8 @@ public class RabbitScript : MonoBehaviour {
 
 	public float speedLimitY;
 
+	public Vector3 maxRabbit;
+
 	private bool onGround;
 	private Vector2 startPosition;
 
@@ -33,6 +35,7 @@ public class RabbitScript : MonoBehaviour {
 
 	void Start () 
 	{
+		maxRabbit = new Vector3 (0.7f, 0.7f, 1f);
 		anim = GetComponent<Animator>();
 		camera = GameObject.FindGameObjectWithTag("MainCamera").transform;
 		GameManager.GameStart += gameStart;
@@ -42,6 +45,12 @@ public class RabbitScript : MonoBehaviour {
 		gameStart ();
 	}
 
+	// get a scale percentage based on the mass
+	float massToScale(float mass) {
+		float maxMass = 1.6f;
+		return 1f - (maxMass - mass);
+	}
+
 	void Update()
 	{
 		if (rigidbody2D.velocity.y > speedLimitY) {
@@ -49,9 +58,17 @@ public class RabbitScript : MonoBehaviour {
 		}
 		rigidbody2D.mass -= shrinkRate;
 		//gameObject.GetComponent<BoxCollider2D> ().size -= new Vector2 (shrinkRate, shrinkRate);
-		if(transform.localScale.x > 0)
-			transform.localScale -= new Vector3 (shrinkRate/2, shrinkRate/2, 0);
-		if(Input.GetButtonDown("Jump") && onGround && !forceGround){
+
+		if(transform.localScale.x > 0){
+			//transform.localScale -= new Vector3 (shrinkRate/2, shrinkRate/2, 0);
+			float scale = massToScale(gameObject.rigidbody2D.mass);
+			//other.gameObject.transform.localScale = other.gameObject.GetComponent<RabbitScript>().maxRabbit * scale;
+			float localScaleX = Mathf.Lerp (gameObject.transform.localScale.x, gameObject.GetComponent<RabbitScript>().maxRabbit.x * scale, Time.deltaTime);
+			float localScaleY = Mathf.Lerp (gameObject.transform.localScale.y, gameObject.GetComponent<RabbitScript>().maxRabbit.y * scale, Time.deltaTime);
+			float localScaleZ = Mathf.Lerp (gameObject.transform.localScale.z, gameObject.GetComponent<RabbitScript>().maxRabbit.z * scale, Time.deltaTime);
+			gameObject.transform.localScale = new Vector3(localScaleX, localScaleY, localScaleZ);
+		}
+		if(Input.GetButtonDown("Jump") && onGround){
 			anim.SetBool ("Jump", true);
 			gameObject.audio.Play ();
 			rigidbody2D.AddForce(jumpSpeed);
