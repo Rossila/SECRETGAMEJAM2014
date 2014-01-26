@@ -61,14 +61,23 @@ public class RabbitScript : MonoBehaviour {
 				anim.SetBool ("Jump", false);
 		}
 		//Debug.Log (transform.position.x);
-		if((transform.localPosition.y < gameOverY) ||
-		   //(renderer.IsVisibleFrom(Camera.main) == false) ||
-		   //(transform.localPosition.x < gameOverX) ||
-		   (Mathf.Abs(camera.position.x - transform.position.x) > gameOverX) ||
-		   (rigidbody2D.mass > tooMuchMass) ||
-		   (rigidbody2D.mass < tooLittleMass)){
+		//(renderer.IsVisibleFrom(Camera.main) == false) ||
+		//(transform.localPosition.x < gameOverX) ||
+
+		if(transform.localPosition.y < gameOverY) {
+			GameOverTxtScript.deathMsg = "You fell off.";
+			GameManager.TriggerGameOver();
+		} else if (Mathf.Abs(camera.position.x - transform.position.x) > gameOverX){
+			GameOverTxtScript.deathMsg = "You could not pass.";
+			GameManager.TriggerGameOver();
+		} else if (rigidbody2D.mass > tooMuchMass) {
+			GameOverTxtScript.deathMsg = "You were too fat.";
+			GameManager.TriggerGameOver();
+		} else if (rigidbody2D.mass < tooLittleMass) {
+			GameOverTxtScript.deathMsg = "You were too skinny.";
 			GameManager.TriggerGameOver();
 		}
+
 	}
 
 	bool isGrounded()
@@ -119,6 +128,7 @@ public class RabbitScript : MonoBehaviour {
 		}
 		if (collider.gameObject.tag == "enemy") {
 			GameManager.TriggerGameOver();
+			GameOverTxtScript.deathMsg = "You were killed.";
 		}
 
 	}

@@ -9,6 +9,7 @@ public class GameOverTxtScript : MonoBehaviour {
 	private Vector2 offset;
 
 	public bool isGameOver = false;
+	public static string deathMsg = "Because you suck.";
 
 
 	// Use this for initialization
@@ -41,10 +42,18 @@ public class GameOverTxtScript : MonoBehaviour {
 		h1.fontSize = 32;
 		h1.normal.textColor = Color.white;
 
+		GUIStyle h2 = new GUIStyle();
+		h2.fontSize = 13;
+		h2.normal.textColor = Color.white;
+
 		GUI.BeginGroup (new Rect (offset.x, offset.y - 10, width, height));
 
 		GUILayout.BeginHorizontal ();
 		GUILayout.Label("GAME OVER", h1);
+		GUILayout.EndHorizontal ();
+
+		GUILayout.BeginHorizontal ();
+		GUILayout.Label(deathMsg, h2);
 		GUILayout.EndHorizontal ();
 
 		GUILayout.BeginHorizontal ();
