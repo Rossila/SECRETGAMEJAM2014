@@ -5,15 +5,15 @@ public class StartGameScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		MainMenuScript.MenuScreen += HandleMenuScreen;
-		MainMenuScript.ControlScreen += HandleControlScreen;
+		MainMenuScript.MenuScreen += this.MenuScreen;
+		MainMenuScript.ControlScreen += this.ControlScreen;
 	}
 
-	void HandleControlScreen () {
+	void ControlScreen () {
 		gameObject.SetActive (false);
 	}
 
-	void HandleMenuScreen () {
+	void MenuScreen () {
 		gameObject.SetActive (true);
 	}
 	
@@ -23,7 +23,11 @@ public class StartGameScript : MonoBehaviour {
 	}
 
 	void OnMouseDown () {
-		print ("Start Game!");
-		Application.LoadLevel (1);
+		Application.LoadLevel ("Level 1");
+	}
+
+	void OnDestroy() {
+		MainMenuScript.MenuScreen -= this.MenuScreen;
+		MainMenuScript.ControlScreen -= this.ControlScreen;
 	}
 }

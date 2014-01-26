@@ -5,17 +5,17 @@ public class ControlScreenScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		MainMenuScript.MenuScreen += HandleMenuScreen;
-		MainMenuScript.ControlScreen += HandleControlScreen;
+		MainMenuScript.MenuScreen += this.MenuScreen;
+		MainMenuScript.ControlScreen += this.ControlScreen;
 		gameObject.SetActive (false);
 	}
 
-	void HandleControlScreen ()
+	void ControlScreen ()
 	{
 		gameObject.SetActive (true);
 	}
 
-	void HandleMenuScreen ()
+	void MenuScreen ()
 	{
 		gameObject.SetActive (false);
 	}
@@ -26,7 +26,11 @@ public class ControlScreenScript : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
-		print ("Back to main menu");
 		MainMenuScript.TriggerMainMenu ();
+	}
+
+	void OnDestroy() {
+		MainMenuScript.MenuScreen -= this.MenuScreen;
+		MainMenuScript.ControlScreen -= this.ControlScreen;
 	}
 }

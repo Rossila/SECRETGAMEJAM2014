@@ -5,15 +5,15 @@ public class ExitGameScript : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		MainMenuScript.MenuScreen += HandleMenuScreen;
-		MainMenuScript.ControlScreen += HandleControlScreen;
+		MainMenuScript.MenuScreen += this.MenuScreen;
+		MainMenuScript.ControlScreen += this.ControlScreen;
 	}
 
-	void HandleControlScreen () {
+	void ControlScreen () {
 		gameObject.SetActive (false);
 	}
 
-	void HandleMenuScreen () {
+	void MenuScreen () {
 		gameObject.SetActive (true);
 	}
 	
@@ -24,5 +24,10 @@ public class ExitGameScript : MonoBehaviour {
 
 	void OnMouseDown () {
 		Application.Quit ();
+	}
+
+	void OnDestroy() {
+		MainMenuScript.MenuScreen -= this.MenuScreen;
+		MainMenuScript.ControlScreen -= this.ControlScreen;
 	}
 }

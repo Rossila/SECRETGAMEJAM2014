@@ -1,10 +1,18 @@
 ﻿using UnityEngine;
 
-public static class MainMenuScript {
+public class MainMenuScript : MonoBehaviour {
 	
 	public delegate void drawMenu();
 
 	public static event drawMenu ControlScreen, MenuScreen;
+
+	void Start() {
+
+	}
+
+	void Update() {
+
+	}
 
 	public static void TriggerMainMenu() {
 		if (MenuScreen != null) {
@@ -19,3 +27,4 @@ public static class MainMenuScript {
 	}
 
 }
+
