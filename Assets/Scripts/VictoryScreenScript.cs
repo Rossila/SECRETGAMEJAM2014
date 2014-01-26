@@ -49,10 +49,16 @@ public class VictoryScreenScript : MonoBehaviour {
 		
 		// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
 		if(GUILayout.Button("Try Again?")) {
-			Application.LoadLevel("Level 1");
+			Application.LoadLevel(Application.loadedLevelName);
 		}
 		
-		// Make the second button.
+        if((Application.loadedLevel + 1) != null || (Application.loadedLevel + 1) != 0) {
+            if(GUILayout.Button("Next Level")) {
+                Application.LoadLevel(Application.loadedLevel + 1);
+            }
+        }
+
+		// Main Menu Button
 		if(GUILayout.Button("Main Menu")) {
 			Application.LoadLevel("MainMenu");
 		}
