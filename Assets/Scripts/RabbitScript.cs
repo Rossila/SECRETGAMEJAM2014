@@ -16,6 +16,8 @@ public class RabbitScript : MonoBehaviour {
 
 	void Start () 
 	{
+		GameManager.GameStart += gameStart;
+		GameManager.GameOver += gameOver;
 		startPosition = transform.localPosition;
 		gameStart ();
 	}
@@ -26,6 +28,13 @@ public class RabbitScript : MonoBehaviour {
 			rigidbody2D.AddForce(jumpSpeed);
 			Debug.Log(rigidbody2D.velocity.y);
 			onGround = false;
+		}
+		if(transform.localPosition.y < gameOverY){
+			GameManager.TriggerGameOver();
+		}
+
+		if(transform.localPosition.y < gameOverY){
+			GameManager.TriggerGameOver();
 		}
 	}
 
