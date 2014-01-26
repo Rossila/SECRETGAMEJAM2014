@@ -9,7 +9,9 @@ public class RabbitScript : MonoBehaviour {
 	public Vector2 constantSpeed;
 	
 	public float gameOverY;
+	public float gameOverX;
 	public float startMass;
+	public float shrinkRate;
 
 	public float tooMuchMass;
 	public float tooLittleMass;
@@ -27,13 +29,20 @@ public class RabbitScript : MonoBehaviour {
 
 	void Update()
 	{
+		rigidbody2D.mass -= shrinkRate;
+		//gameObject.GetComponent<BoxCollider2D> ().size -= new Vector2 (shrinkRate, shrinkRate);
+		if(transform.localScale.x > 0)
+			transform.localScale -= new Vector3 (shrinkRate/2, shrinkRate/2, 0);
+		print ("mass:"+rigidbody2D.mass);
+		print ("size:" + transform.localScale.x);
 		if(Input.GetButton("Jump") && onGround){
 			rigidbody2D.AddForce(jumpSpeed);
 			Debug.Log(rigidbody2D.velocity.y);
 			onGround = false;
 		}
 		if((transform.localPosition.y < gameOverY) ||
-		   (renderer.IsVisibleFrom(Camera.main) == false) ||
+		   //(renderer.IsVisibleFrom(Camera.main) == false) ||
+		   (transform.localPosition.x < gameOverX) ||
 		   (rigidbody2D.mass > tooMuchMass) ||
 		   (rigidbody2D.mass < tooLittleMass)){
 			GameManager.TriggerGameOver();

@@ -64,10 +64,13 @@ public class ScrollingScript : MonoBehaviour
 	
 	void Update()
 	{
+		float newSpeedX = speed.x * (1 / GameObject.FindGameObjectWithTag ("rabbit").rigidbody2D.mass);
+		float newSpeedY = speed.y * (1 / GameObject.FindGameObjectWithTag ("rabbit").rigidbody2D.mass);
+		
 		// Movement
 		Vector3 movement = new Vector3(
-			speed.x * direction.x,
-			speed.y * direction.y,
+			newSpeedX * direction.x,
+			newSpeedY * direction.y,
 			0);
 		
 		movement *= Time.deltaTime;

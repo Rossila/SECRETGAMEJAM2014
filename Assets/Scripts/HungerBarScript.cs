@@ -21,12 +21,16 @@ public class HungerBarScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		currEnergy = maxEnergy;
+		GameManager.GameStart += gameStart;
+		GameManager.GameOver += gameOver;
+		gameStart ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		AdjustCurrEnergy (hungerSpeed);
+		print ("Adjusting: "+GameObject.FindGameObjectWithTag ("rabbit").rigidbody2D.mass);
+		AdjustCurrEnergy (GameObject.FindGameObjectWithTag("rabbit").rigidbody2D.mass);
+
 	}
 
 	void OnGUI() {
@@ -40,7 +44,7 @@ public class HungerBarScript : MonoBehaviour {
 	}
 	
 	public void AdjustCurrEnergy(float i) {
-		currEnergy += i * 0.1f;
+		currEnergy = i*50;
 		
 		if (currEnergy < 0) {
 			currEnergy = 0;
@@ -49,6 +53,13 @@ public class HungerBarScript : MonoBehaviour {
 		}
 
 		length = (currEnergy / maxEnergy) * maxLength;
-	}
 
+		print ("Length :" + length);
+	}
+	public void gameStart(){
+				currEnergy = maxEnergy;
+		}
+	public void gameOver(){
+	
+	}
 }
