@@ -70,8 +70,7 @@ public class CarrotCakeScript : MonoBehaviour {
 		collider2D.enabled = false;
 	}
 	
-	void gameOver()
-	{
+	void gameOver() {
 		
 	}
 

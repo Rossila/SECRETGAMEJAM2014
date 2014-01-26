@@ -27,6 +27,7 @@ public class GameOverTxtScript : MonoBehaviour {
 	void gameOver()
 	{
 		gameObject.SetActive (true);
+		Time.timeScale = 0;
 	}
 
 	void gameStart()
