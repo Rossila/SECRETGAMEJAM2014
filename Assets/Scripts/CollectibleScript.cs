@@ -10,9 +10,10 @@ public class CollectibleScript : MonoBehaviour {
 	void Start () {
 		GameManager.GameStart += gameStart;
 		GameManager.GameOver += gameOver;
+		GameManager.GameWin += gameWin;
 		gameStart ();
 	}
-	
+
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "rabbit"){
 			AudioSource.PlayClipAtPoint(clip, transform.position);
@@ -51,8 +52,7 @@ public class CollectibleScript : MonoBehaviour {
 		// -- Collider
 		collider2D.enabled = true;
 	}
-	void gameStart()
-	{
+	void gameStart() {
 		gameObject.SetActive(true);
 		hasSpawn = false;
 		
@@ -61,8 +61,11 @@ public class CollectibleScript : MonoBehaviour {
 		collider2D.enabled = false;
 	}
 	
-	void gameOver()
-	{
+	void gameOver() {
+		
+	}
+
+	void gameWin () {
 		
 	}
 
@@ -70,6 +73,7 @@ public class CollectibleScript : MonoBehaviour {
 	{
 		GameManager.GameStart -= gameStart;
 		GameManager.GameOver -= gameOver;
+		GameManager.GameWin -= gameWin;
 	}
 	
 }

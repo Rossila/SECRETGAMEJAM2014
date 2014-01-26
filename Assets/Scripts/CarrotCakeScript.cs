@@ -76,7 +76,7 @@ public class CarrotCakeScript : MonoBehaviour {
 	}
 
 	void gameWin() {
-		Application.LoadLevel ("MainMenu");
+
 	}
 	
 	void OnDestroy()

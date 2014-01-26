@@ -16,9 +16,13 @@ public class GameOverTxtScript : MonoBehaviour {
 		offset = new Vector2(Screen.width/2, Screen.height/2);
 		GameManager.GameStart += gameStart;
 		GameManager.GameOver += gameOver;
+		GameManager.GameWin += gameWin;
 		gameStart ();
 	}
 
+	void gameWin() {
+
+	}
 
 	void gameOver()
 	{
@@ -61,5 +65,6 @@ public class GameOverTxtScript : MonoBehaviour {
 	void OnDestroy(){
 		GameManager.GameStart -= gameStart;
 		GameManager.GameOver -= gameOver;
+		GameManager.GameWin -= gameWin;
 	}
 }
