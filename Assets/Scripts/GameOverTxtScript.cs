@@ -38,12 +38,12 @@ public class GameOverTxtScript : MonoBehaviour {
 
 		// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
 		if(GUILayout.Button("Try Again?")) {
-			//Application.LoadLevel(1);
+			Application.LoadLevel("Level 1");
 		}
 		
 		// Make the second button.
 		if(GUILayout.Button("Main Menu")) {
-			//Application.LoadLevel(2);
+			Application.LoadLevel("MainMenu");
 		}
 
 		GUILayout.EndHorizontal ();
