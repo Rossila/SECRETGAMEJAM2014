@@ -23,6 +23,7 @@ public class RabbitScript : MonoBehaviour {
 	{
 		GameManager.GameStart += gameStart;
 		GameManager.GameOver += gameOver;
+		GameManager.GameWin += gameWin;
 		startPosition = transform.localPosition;
 		gameStart ();
 	}
@@ -93,8 +94,13 @@ public class RabbitScript : MonoBehaviour {
 		gameObject.SetActive(false);
 	}
 
+	void gameWin() {
+
+	}
+
 	void OnDestroy(){
 		GameManager.GameStart -= gameStart;
 		GameManager.GameOver -= gameOver;
+		GameManager.GameWin -= gameWin;
 	}
 }
