@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class MainMenuScript : MonoBehaviour {
+public static class MainMenuScript {
+	
+	public delegate void drawMenu();
 
-	// Use this for initialization
-	void Start () {
-	
+	public static event drawMenu ControlScreen, MenuScreen;
+
+	public static void TriggerMainMenu() {
+		if (MenuScreen != null) {
+			MenuScreen();
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public static void TriggerControlMenu() {
+		if (ControlScreen != null) {
+			ControlScreen();
+		}
 	}
+
 }
