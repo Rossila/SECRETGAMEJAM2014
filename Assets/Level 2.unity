@@ -115,8 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &12643381
 PolygonCollider2D:
@@ -207,7 +206,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &26234492
 PolygonCollider2D:
@@ -269,11 +267,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 02a09d668eb5694438c76223738cddde, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 68.8968048
+      value: 68.8058929
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 02a09d668eb5694438c76223738cddde, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.72403526
+      value: 2.58765173
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 02a09d668eb5694438c76223738cddde, type: 2}
       propertyPath: m_LocalPosition.z
@@ -890,8 +888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &66791727
 PolygonCollider2D:
@@ -987,7 +984,7 @@ Transform:
   m_PrefabInternal: {fileID: 1850267575}
   m_GameObject: {fileID: 67898603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.9639282, y: 2.63659143, z: 0}
+  m_LocalPosition: {x: 71.8275299, y: 2.50020742, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
@@ -1117,7 +1114,7 @@ Transform:
   m_PrefabInternal: {fileID: 839437304}
   m_GameObject: {fileID: 84039937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 115.097275, y: -2.371665, z: 0}
+  m_LocalPosition: {x: 115.142731, y: -2.371665, z: -5}
   m_LocalScale: {x: .821029186, y: .821029902, z: 1}
   m_Children: []
   m_Father: {fileID: 409473818}
@@ -1453,8 +1450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &132678863
 PolygonCollider2D:
@@ -1596,7 +1592,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &175941520
 PolygonCollider2D:
@@ -1669,7 +1664,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &185532492
 PolygonCollider2D:
@@ -1857,7 +1851,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &212777285
 PolygonCollider2D:
@@ -2294,7 +2287,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &265213280
 PolygonCollider2D:
@@ -2784,8 +2776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &312587377
 PolygonCollider2D:
@@ -3189,7 +3180,7 @@ Transform:
   m_PrefabInternal: {fileID: 27244385}
   m_GameObject: {fileID: 391892325}
   m_LocalRotation: {x: 0, y: 0, z: .00208799983, w: .999997854}
-  m_LocalPosition: {x: 68.8968048, y: 2.72403526, z: 0}
+  m_LocalPosition: {x: 68.8058929, y: 2.58765173, z: 0}
   m_LocalScale: {x: .478318959, y: .478318989, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
@@ -3476,8 +3467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &436800394
 PolygonCollider2D:
@@ -3578,8 +3568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &443869795
 PolygonCollider2D:
@@ -3770,7 +3759,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &475793095
 PolygonCollider2D:
@@ -3973,7 +3961,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &494647105
 PolygonCollider2D:
@@ -5067,6 +5054,7 @@ MonoBehaviour:
   minToBreakWall: 1
   maxToPassTree: 1
   speedLimitY: 35
+  maxRabbit: {x: 0, y: 0, z: 0}
 --- !u!61 &622176320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5490,8 +5478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &671542099
 PolygonCollider2D:
@@ -6369,7 +6356,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &801364291
 PolygonCollider2D:
@@ -6603,7 +6589,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 7430ded8415c6544496ac0cdbc590e31, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 115.097275
+      value: 115.142731
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7430ded8415c6544496ac0cdbc590e31, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6611,7 +6597,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7430ded8415c6544496ac0cdbc590e31, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7430ded8415c6544496ac0cdbc590e31, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7599,8 +7585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1001209198
 PolygonCollider2D:
@@ -7865,7 +7850,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1021843574
 PolygonCollider2D:
@@ -8370,7 +8354,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1098969480
 PolygonCollider2D:
@@ -8464,8 +8447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1100482906
 PolygonCollider2D:
@@ -9532,8 +9514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1259179101
 PolygonCollider2D:
@@ -9646,7 +9627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1271718666
 PolygonCollider2D:
@@ -9729,8 +9709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1272711085
 PolygonCollider2D:
@@ -9919,8 +9898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1338178072
 PolygonCollider2D:
@@ -11223,7 +11201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1476446046
 PolygonCollider2D:
@@ -11355,7 +11332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1512246910
 PolygonCollider2D:
@@ -11467,8 +11443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1534639398
 PolygonCollider2D:
@@ -11894,7 +11869,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1609729513
 PolygonCollider2D:
@@ -12730,7 +12704,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1790915696
 PolygonCollider2D:
@@ -12954,7 +12927,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1821213262
 PolygonCollider2D:
@@ -13037,8 +13009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1821506102
 PolygonCollider2D:
@@ -13180,7 +13151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1829511270
 PolygonCollider2D:
@@ -13352,11 +13322,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 258bef484ebc11a418f9d6cc0f93d814, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 71.9639282
+      value: 71.8275299
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 258bef484ebc11a418f9d6cc0f93d814, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.63659143
+      value: 2.50020742
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 258bef484ebc11a418f9d6cc0f93d814, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13502,8 +13472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1858719890
 PolygonCollider2D:
@@ -13615,8 +13584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1864864721
 PolygonCollider2D:
@@ -13960,7 +13928,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1889976316
 PolygonCollider2D:
@@ -14719,8 +14686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1954529111
 PolygonCollider2D:
@@ -15279,8 +15245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0599999987
-  scaleIncrement: -.0599999987
+  massIncrement: -.0500000007
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &2039401726
 PolygonCollider2D:
@@ -15772,7 +15737,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &2087429988
 PolygonCollider2D:
@@ -16034,7 +15998,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .129999995
-  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &2114156011
 PolygonCollider2D:
