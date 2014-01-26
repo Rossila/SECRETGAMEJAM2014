@@ -1,20 +1,15 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class CakeScript : MonoBehaviour {
+public class CollectibleScript : MonoBehaviour {
 	private bool hasSpawn;
 	public float massIncrement;
 	public float scaleIncrement;
-
+	
 	// Use this for initialization
 	void Start () {
-		//startPosition = transform.localPosition;
-		//gameStart ();
-		hasSpawn = false;
-		
-		// Disable everything
-		// -- collider
-		collider2D.enabled = false;
+		GameManager.GameStart += gameStart;
+		GameManager.GameOver += gameOver;
+		gameStart ();
 	}
 	
 	void OnTriggerEnter2D(Collider2D other){
@@ -24,7 +19,7 @@ public class CakeScript : MonoBehaviour {
 		}
 		gameObject.SetActive(false);
 	}
-
+	
 	// Update is called once per frame
 	void Update () {
 		// 2 - Check if the enemy has spawned.
@@ -44,7 +39,7 @@ public class CakeScript : MonoBehaviour {
 			}
 		}
 	}
-
+	
 	private void Spawn()
 	{
 		hasSpawn = true;
@@ -53,4 +48,19 @@ public class CakeScript : MonoBehaviour {
 		// -- Collider
 		collider2D.enabled = true;
 	}
+	void gameStart()
+	{
+		gameObject.SetActive(true);
+		hasSpawn = false;
+		
+		// Disable everything
+		// -- collider
+		collider2D.enabled = false;
+	}
+	
+	void gameOver()
+	{
+		
+	}
+	
 }
