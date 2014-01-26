@@ -605,8 +605,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &112843954
 Prefab:
@@ -843,8 +843,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &162139456
 PolygonCollider2D:
@@ -1205,8 +1205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0500000007
-  scaleIncrement: -.0500000007
+  massIncrement: -.0299999993
+  scaleIncrement: -.0299999993
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!1 &239976160
 GameObject:
@@ -1427,8 +1427,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &284695214
 Prefab:
@@ -1837,8 +1837,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &315848216
 Prefab:
@@ -2699,8 +2699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0500000007
-  scaleIncrement: -.0500000007
+  massIncrement: -.0299999993
+  scaleIncrement: -.0299999993
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!1 &591834917
 GameObject:
@@ -2988,7 +2988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startScale: {x: .5, y: .5, z: 1}
-  jumpSpeed: {x: 0, y: 450}
+  jumpSpeed: {x: 0, y: 1000}
   constantSpeed: {x: 0, y: 0}
   gameOverY: -10
   gameOverX: 0
@@ -3289,8 +3289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &693801762
 Prefab:
@@ -3707,8 +3707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1 &778095857
 GameObject:
@@ -4021,8 +4021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &839437304
 Prefab:
@@ -4257,8 +4257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.100000001
-  scaleIncrement: -.100000001
+  massIncrement: -.0299999993
+  scaleIncrement: -.0299999993
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &883786171
 PolygonCollider2D:
@@ -4558,6 +4558,108 @@ Prefab:
   m_RootGameObject: {fileID: 1362557576}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &983349496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 056184dacbe5de5429b2c8091159db1b, type: 2}
+  m_PrefabInternal: {fileID: 1241009222}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 983349497}
+  - 212: {fileID: 983349500}
+  - 60: {fileID: 983349499}
+  - 114: {fileID: 983349498}
+  m_Layer: 0
+  m_Name: carrotPrefeb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &983349497
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 056184dacbe5de5429b2c8091159db1b, type: 2}
+  m_PrefabInternal: {fileID: 1241009222}
+  m_GameObject: {fileID: 983349496}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.1676674, y: -5.52648926, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2069440437}
+--- !u!114 &983349498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 056184dacbe5de5429b2c8091159db1b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1241009222}
+  m_GameObject: {fileID: 983349496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  massIncrement: -.0299999993
+  scaleIncrement: -.0299999993
+  clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
+--- !u!60 &983349499
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6000000, guid: 056184dacbe5de5429b2c8091159db1b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1241009222}
+  m_GameObject: {fileID: 983349496}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: .379999995, y: -.0799999982}
+      - {x: .469999999, y: .109999999}
+      - {x: .620000005, y: .129999995}
+      - {x: .669999957, y: .189999998}
+      - {x: .669999957, y: .319999993}
+      - {x: .659999967, y: .389999986}
+      - {x: .389999986, y: .599999964}
+      - {x: .359999985, y: .610000014}
+      - {x: .199999988, y: .610000014}
+      - {x: .170000002, y: .599999964}
+      - {x: .0899999961, y: .519999981}
+      - {x: -.0199999996, y: .379999995}
+      - {x: -.109999999, y: .340000004}
+      - {x: -.310000002, y: .149999991}
+      - {x: -.370000005, y: .049999997}
+      - {x: -.610000014, y: -.329999983}
+      - {x: -.610000014, y: -.429999977}
+      - {x: -.579999983, y: -.479999989}
+      - {x: -.469999999, y: -.479999989}
+      - {x: -.0899999961, y: -.359999985}
+      - {x: .099999994, y: -.299999982}
+      - {x: .25, y: -.219999999}
+--- !u!212 &983349500
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: 056184dacbe5de5429b2c8091159db1b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1241009222}
+  m_GameObject: {fileID: 983349496}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: f185ae423ec6653498cee7a10031d09d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &992292436
 GameObject:
   m_ObjectHideFlags: 0
@@ -5471,8 +5573,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &1192354013
 Prefab:
@@ -5657,8 +5759,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.100000001
-  scaleIncrement: -.100000001
+  massIncrement: -.0299999993
+  scaleIncrement: -.0299999993
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1227135054
 PolygonCollider2D:
@@ -5854,6 +5956,50 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 258bef484ebc11a418f9d6cc0f93d814, type: 2}
   m_RootGameObject: {fileID: 904569310}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1001 &1241009222
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2069440437}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 056184dacbe5de5429b2c8091159db1b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 49.1676674
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 056184dacbe5de5429b2c8091159db1b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -5.52648926
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 056184dacbe5de5429b2c8091159db1b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 056184dacbe5de5429b2c8091159db1b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 056184dacbe5de5429b2c8091159db1b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 056184dacbe5de5429b2c8091159db1b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 056184dacbe5de5429b2c8091159db1b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 056184dacbe5de5429b2c8091159db1b, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 056184dacbe5de5429b2c8091159db1b, type: 2}
+  m_RootGameObject: {fileID: 983349496}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1001 &1254874983
@@ -6078,7 +6224,7 @@ Transform:
   m_PrefabInternal: {fileID: 2088166311}
   m_GameObject: {fileID: 1274802390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.2426147, y: -6.71379757, z: 0}
+  m_LocalPosition: {x: 24.1555824, y: -7.88653183, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2069440437}
@@ -6094,8 +6240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0500000007
-  scaleIncrement: -.0500000007
+  massIncrement: -.0299999993
+  scaleIncrement: -.0299999993
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!1 &1346096479
 GameObject:
@@ -6781,8 +6927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1404641613
 PolygonCollider2D:
@@ -6865,8 +7011,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1406918427
 PolygonCollider2D:
@@ -7124,8 +7270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1423369169
 PolygonCollider2D:
@@ -7208,8 +7354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1449305206
 PolygonCollider2D:
@@ -7281,7 +7427,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: c60c837d7a4f6554ca444cd9a0c8ae03, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 6.5, y: .5}
-  m_Center: {x: 0, y: -1}
+  m_Center: {x: 0, y: 0}
 --- !u!212 &1451646048
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7570,8 +7716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.100000001
-  scaleIncrement: -.100000001
+  massIncrement: -.0299999993
+  scaleIncrement: -.0299999993
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1499958566
 PolygonCollider2D:
@@ -7724,8 +7870,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.100000001
-  scaleIncrement: -.100000001
+  massIncrement: -.0299999993
+  scaleIncrement: -.0299999993
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1550544836
 PolygonCollider2D:
@@ -7826,8 +7972,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1555150560
 PolygonCollider2D:
@@ -7899,8 +8045,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.100000001
-  scaleIncrement: -.100000001
+  massIncrement: -.0299999993
+  scaleIncrement: -.0299999993
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1571382127
 PolygonCollider2D:
@@ -8190,8 +8336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1 &1618568158
 GameObject:
@@ -8827,7 +8973,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: jumpSpeed.y
-      value: 450
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: jumpSpeed.x
@@ -9389,8 +9535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1 &1925957979
 GameObject:
@@ -10179,6 +10325,7 @@ Transform:
   - {fileID: 566035662}
   - {fileID: 883786169}
   - {fileID: 1227135052}
+  - {fileID: 983349497}
   - {fileID: 1571382129}
   - {fileID: 1550544834}
   - {fileID: 1274802393}
@@ -10700,8 +10847,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: .129999995
+  scaleIncrement: .129999995
   clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &2140928110
 PolygonCollider2D:
