@@ -76,8 +76,9 @@ MonoBehaviour:
   shrinkRate: 0
   tooMuchMass: 2
   tooLittleMass: 0
-  minToBreakWall: 1.5
+  minToBreakWall: 2
   maxToPassTree: .5
+  speedLimitY: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
