@@ -17,7 +17,7 @@ public class CollectibleScript : MonoBehaviour {
 		if (other.gameObject.tag == "rabbit"){
 			AudioSource.PlayClipAtPoint(clip, transform.position);
 			other.gameObject.rigidbody2D.mass += massIncrement;
-			other.gameObject.GetComponent<BoxCollider2D>().size += new Vector2(scaleIncrement/2, scaleIncrement/2);
+			//other.gameObject.GetComponent<BoxCollider2D>().size += new Vector2(scaleIncrement/2, scaleIncrement/2);
 			other.gameObject.transform.localScale += new Vector3(scaleIncrement/2, scaleIncrement/2, 0);
 		}
 		gameObject.SetActive(false);

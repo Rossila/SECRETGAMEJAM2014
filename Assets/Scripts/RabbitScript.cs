@@ -37,6 +37,7 @@ public class RabbitScript : MonoBehaviour {
 			gameObject.audio.Play ();
 			rigidbody2D.AddForce(jumpSpeed);
 			onGround = false;
+
 		}
 		if((transform.localPosition.y < gameOverY) ||
 		   //(renderer.IsVisibleFrom(Camera.main) == false) ||
@@ -60,8 +61,9 @@ public class RabbitScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D other){
-
-		if ((other.gameObject.tag == "ground") && isGrounded ()) {
+		bool grounded = transform.position.y >= other.gameObject.transform.position.y+
+			other.gameObject.GetComponent<BoxCollider2D>().size.y;
+		if ((other.gameObject.tag == "ground") && grounded ) {
 			onGround = true;
 		} 
 
