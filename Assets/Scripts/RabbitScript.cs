@@ -24,8 +24,12 @@ public class RabbitScript : MonoBehaviour {
 
 	private Transform camera;
 
+	private bool Jump;
+	private Animator anim;
+
 	void Start () 
 	{
+		anim = GetComponent<Animator>();
 		camera = GameObject.FindGameObjectWithTag("MainCamera").transform;
 		GameManager.GameStart += gameStart;
 		GameManager.GameOver += gameOver;
@@ -36,17 +40,18 @@ public class RabbitScript : MonoBehaviour {
 
 	void Update()
 	{
-		Debug.Log ("Camera position x" + camera.position.x);
-		Debug.Log ("Transform Position x" + transform.position.x);
-		print ("Velocity:"+rigidbody2D.velocity.y);
 		rigidbody2D.mass -= shrinkRate;
 		//gameObject.GetComponent<BoxCollider2D> ().size -= new Vector2 (shrinkRate, shrinkRate);
 		if(transform.localScale.x > 0)
 			transform.localScale -= new Vector3 (shrinkRate/2, shrinkRate/2, 0);
 		if(Input.GetButtonDown("Jump") && onGround){
+			anim.SetBool ("Jump", true);
 			gameObject.audio.Play ();
 			rigidbody2D.AddForce(jumpSpeed);
 			onGround = false;
+		} else {
+			if(onGround)
+				anim.SetBool ("Jump", false);
 		}
 		//Debug.Log (transform.position.x);
 		if((transform.localPosition.y < gameOverY) ||
