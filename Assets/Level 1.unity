@@ -2016,8 +2016,10 @@ MonoBehaviour:
   startScale: {x: 1, y: 1, z: 1}
   jumpSpeed: {x: 0, y: 350}
   constantSpeed: {x: 0, y: 0}
-  gameOverY: 0
+  gameOverY: -5
   startMass: 1
+  tooMuchMass: 1.5
+  tooLittleMass: .5
 --- !u!61 &622176320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5732,6 +5734,14 @@ Prefab:
     - target: {fileID: 100000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: m_TagString
       value: rabbit
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
+      propertyPath: tooMuchMass
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
+      propertyPath: tooLittleMass
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 336728d838514b745a57a0d6776bf816, type: 2}

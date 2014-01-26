@@ -68,11 +68,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startScale: {x: 1, y: 1, z: 1}
-  jumpSpeed: {x: 0, y: 7}
+  jumpSpeed: {x: 0, y: 350}
   constantSpeed: {x: 1, y: 0}
-  distToGround: .400000006
-  gameOverY: 0
+  gameOverY: -5
   startMass: 1
+  tooMuchMass: .5
+  tooLittleMass: 1.5
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

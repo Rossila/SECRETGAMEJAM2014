@@ -11,6 +11,9 @@ public class RabbitScript : MonoBehaviour {
 	public float gameOverY;
 	public float startMass;
 
+	public float tooMuchMass;
+	public float tooLittleMass;
+
 	private bool onGround;
 	private Vector2 startPosition;
 
@@ -29,18 +32,13 @@ public class RabbitScript : MonoBehaviour {
 			Debug.Log(rigidbody2D.velocity.y);
 			onGround = false;
 		}
-		if(transform.localPosition.y < gameOverY){
+		if((transform.localPosition.y < gameOverY) ||
+		   (renderer.IsVisibleFrom(Camera.main) == false) ||
+		   (rigidbody2D.mass > tooMuchMass) ||
+		   (rigidbody2D.mass < tooLittleMass)){
 			GameManager.TriggerGameOver();
 		}
-
-		if(transform.localPosition.y < gameOverY){
-			GameManager.TriggerGameOver();
-		}
-	}
-
-	void FixedUpdate()
-	{
-		rigidbody2D.velocity = new Vector2 (constantSpeed.x / rigidbody2D.mass, rigidbody2D.velocity.y);
+	
 	}
 
 	bool hitWall()
@@ -68,6 +66,7 @@ public class RabbitScript : MonoBehaviour {
 	void gameOver()
 	{
 		rigidbody2D.velocity = Vector2.zero;
+		gameObject.SetActive(false);
 	}
 	
 }
