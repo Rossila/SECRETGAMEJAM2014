@@ -180,6 +180,44 @@ Transform:
   - {fileID: 1749216665}
   - {fileID: 1012767965}
   m_Father: {fileID: 412752668}
+--- !u!1 &186358102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 186358103}
+  - 114: {fileID: 186358104}
+  m_Layer: 0
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &186358103
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 186358102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .305907339, y: -.321707606, z: 16.6879883}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 412752668}
+--- !u!114 &186358104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 186358102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce3d81ef105e4ce4a89db3c56195c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &246826704
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +296,7 @@ Transform:
   - {fileID: 1130885818}
   - {fileID: 98113718}
   - {fileID: 1340265148}
+  - {fileID: 186358103}
   m_Father: {fileID: 0}
 --- !u!1 &632815192
 GameObject:
@@ -331,7 +370,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.63, y: .50999999}
+  m_Size: {x: 3, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!1 &710428149
 GameObject:
@@ -485,7 +524,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.99000001, y: .5}
+  m_Size: {x: 3, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!1 &1130885817
 GameObject:
@@ -628,7 +667,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.14999998, y: .50999999}
+  m_Size: {x: 3, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!114 &1262719397
 MonoBehaviour:
@@ -740,7 +779,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.83000004, y: .5}
+  m_Size: {x: 3, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!1 &1950720667
 GameObject:
