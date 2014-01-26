@@ -23,7 +23,7 @@ public class StartGameScript : MonoBehaviour {
 	}
 
 	void OnMouseDown () {
-		Application.LoadLevel ("Level 1");
+		Application.LoadLevel (Application.loadedLevel + 1);
 	}
 
 	void OnDestroy() {
