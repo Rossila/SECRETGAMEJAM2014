@@ -30,15 +30,15 @@ public class RabbitScript : MonoBehaviour {
 
 	void Update()
 	{
+		print ("Velocity:"+rigidbody2D.velocity.y);
 		rigidbody2D.mass -= shrinkRate;
 		//gameObject.GetComponent<BoxCollider2D> ().size -= new Vector2 (shrinkRate, shrinkRate);
 		if(transform.localScale.x > 0)
 			transform.localScale -= new Vector3 (shrinkRate/2, shrinkRate/2, 0);
 		if(Input.GetButtonDown("Jump") && onGround){
-			onGround = false;
 			gameObject.audio.Play ();
 			rigidbody2D.AddForce(jumpSpeed);
-
+			onGround = false;
 		}
 		if((transform.localPosition.y < gameOverY) ||
 		   //(renderer.IsVisibleFrom(Camera.main) == false) ||
@@ -67,7 +67,7 @@ public class RabbitScript : MonoBehaviour {
 						(transform.position.y < other.gameObject.transform.position.y +
 						other.gameObject.GetComponent<BoxCollider2D> ().size.y+1.0f);
 
-		if ((other.gameObject.tag == "ground") && grounded ) {
+		if ((other.gameObject.tag == "ground") && grounded && rigidbody2D.velocity.y<=15 ) {
 			onGround = true;
 		} 
 
