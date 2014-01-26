@@ -3030,7 +3030,7 @@ MonoBehaviour:
   constantSpeed: {x: 0, y: 0}
   gameOverY: -10
   gameOverX: 13
-  startMass: 1.5
+  startMass: 1
   shrinkRate: .000500000024
   tooMuchMass: 1.60000002
   tooLittleMass: .600000024
@@ -4767,7 +4767,7 @@ GameObject:
   - 114: {fileID: 1018939412}
   m_Layer: 0
   m_Name: wallPrefab
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5918,6 +5918,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: f002803e65b53a04ea64e7add4570098,
         type: 3}
+    - target: {fileID: 100000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
   m_RootGameObject: {fileID: 1018939410}
@@ -8821,7 +8825,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: startMass
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: m_TagString
