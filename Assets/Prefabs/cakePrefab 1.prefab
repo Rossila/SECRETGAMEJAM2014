@@ -57,6 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: .100000001
   scaleIncrement: .100000001
+  clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

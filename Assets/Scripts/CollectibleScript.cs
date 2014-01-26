@@ -4,6 +4,7 @@ public class CollectibleScript : MonoBehaviour {
 	private bool hasSpawn;
 	public float massIncrement;
 	public float scaleIncrement;
+	public AudioClip clip;
 	
 	// Use this for initialization
 	void Start () {
@@ -14,6 +15,7 @@ public class CollectibleScript : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "rabbit"){
+			AudioSource.PlayClipAtPoint(clip, transform.position);
 			other.gameObject.rigidbody2D.mass += massIncrement;
 			other.gameObject.GetComponent<BoxCollider2D>().size += new Vector2(scaleIncrement/2, scaleIncrement/2);
 			other.gameObject.transform.localScale += new Vector3(scaleIncrement/2, scaleIncrement/2, 0);

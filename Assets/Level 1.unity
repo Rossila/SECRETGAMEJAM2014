@@ -535,6 +535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: .100000001
   scaleIncrement: .100000001
+  clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &112843954
 Prefab:
   m_ObjectHideFlags: 0
@@ -1006,6 +1007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: -.100000001
   scaleIncrement: -.100000001
+  clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!1 &239976160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,6 +1185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: .100000001
   scaleIncrement: .100000001
+  clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &284695214
 Prefab:
   m_ObjectHideFlags: 0
@@ -1592,6 +1595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: .100000001
   scaleIncrement: .100000001
+  clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1 &303406926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2417,6 +2421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: -.100000001
   scaleIncrement: -.100000001
+  clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!1 &591834917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2669,6 +2674,7 @@ GameObject:
   - 61: {fileID: 622176320}
   - 114: {fileID: 622176319}
   - 95: {fileID: 622176323}
+  - 82: {fileID: 622176324}
   m_Layer: 0
   m_Name: rabbitPrefab
   m_TagString: rabbit
@@ -2774,6 +2780,64 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!82 &622176324
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 622176317}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 65123ea3f144d03439f4825685e5cae3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &672555955
 Prefab:
   m_ObjectHideFlags: 0
@@ -2945,6 +3009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: .100000001
   scaleIncrement: .100000001
+  clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &696592547
 Prefab:
   m_ObjectHideFlags: 0
@@ -3274,6 +3339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: .100000001
   scaleIncrement: .100000001
+  clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &770863238
 Prefab:
   m_ObjectHideFlags: 0
@@ -3625,6 +3691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: .100000001
   scaleIncrement: .100000001
+  clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &839437304
 Prefab:
   m_ObjectHideFlags: 0
@@ -3952,7 +4019,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d1180134d6caaaf439a3670367b0bac5, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d1180134d6caaaf439a3670367b0bac5, type: 2}
       propertyPath: m_Layer
@@ -4814,6 +4881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: .100000001
   scaleIncrement: .100000001
+  clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1001 &1192354013
 Prefab:
   m_ObjectHideFlags: 0
@@ -5334,6 +5402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: -.100000001
   scaleIncrement: -.100000001
+  clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!1 &1346096479
 GameObject:
   m_ObjectHideFlags: 0
@@ -6036,6 +6105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: .100000001
   scaleIncrement: .100000001
+  clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!60 &1404641613
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7156,13 +7226,14 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 938823040}
   m_GameObject: {fileID: 1617128292}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   massIncrement: .100000001
   scaleIncrement: .100000001
+  clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1 &1618568158
 GameObject:
   m_ObjectHideFlags: 0
@@ -8110,6 +8181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   massIncrement: .100000001
   scaleIncrement: .100000001
+  clip: {fileID: 8300000, guid: 28a1b9aa13542b94396a5e0e3c51ffe5, type: 3}
 --- !u!1 &1925957979
 GameObject:
   m_ObjectHideFlags: 0
@@ -8840,9 +8912,9 @@ Transform:
   m_LocalPosition: {x: -9.78819561, y: 8.72882652, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 237946689}
-  - {fileID: 566035662}
   - {fileID: 1274802393}
+  - {fileID: 566035662}
+  - {fileID: 237946689}
   m_Father: {fileID: 1687098537}
 --- !u!1 &2073700381
 GameObject:

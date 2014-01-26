@@ -33,11 +33,9 @@ public class RabbitScript : MonoBehaviour {
 		//gameObject.GetComponent<BoxCollider2D> ().size -= new Vector2 (shrinkRate, shrinkRate);
 		if(transform.localScale.x > 0)
 			transform.localScale -= new Vector3 (shrinkRate/2, shrinkRate/2, 0);
-		print ("mass:"+rigidbody2D.mass);
-		print ("size:" + transform.localScale.x);
 		if(Input.GetButton("Jump") && onGround){
+			gameObject.audio.Play ();
 			rigidbody2D.AddForce(jumpSpeed);
-			Debug.Log(rigidbody2D.velocity.y);
 			onGround = false;
 		}
 		if((transform.localPosition.y < gameOverY) ||
