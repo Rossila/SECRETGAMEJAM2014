@@ -43,6 +43,7 @@ public class RabbitScript : MonoBehaviour {
 			rigidbody2D.AddForce(jumpSpeed);
 			onGround = false;
 		}
+		//Debug.Log (transform.position.x);
 		if((transform.localPosition.y < gameOverY) ||
 		   //(renderer.IsVisibleFrom(Camera.main) == false) ||
 		   (transform.localPosition.x < gameOverX) ||
@@ -50,13 +51,12 @@ public class RabbitScript : MonoBehaviour {
 		   (rigidbody2D.mass < tooLittleMass)){
 			GameManager.TriggerGameOver();
 		}
-	
 	}
 
 	bool isGrounded()
 	{
 		Vector2 currentPosition = new Vector2 (transform.position.x, transform.position.y);
-		float boxColliderSize = GetComponent <BoxCollider2D>().size.y;
+		//float boxColliderSize = GetComponent <BoxCollider2D>().size.y;
 		//RaycastHit2D hit = Physics2D.Raycast(currentPosition + -Vector2.up*boxColliderSize + new Vector2(0f, -0.1f), -Vector2.up, 0.4f);
 		//Debug.Log (boxColliderSize);
 		//Debug.Log (currentPosition + -Vector2.up * boxColliderSize + new Vector2 (0f, -0.1f));
@@ -65,12 +65,15 @@ public class RabbitScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D other){
-		bool grounded = (transform.position.y >= other.gameObject.transform.position.y +
+		/*bool grounded = (transform.position.y >= other.gameObject.transform.position.y +
 						other.gameObject.GetComponent<BoxCollider2D> ().size.y) && 
 						(transform.position.y < other.gameObject.transform.position.y +
-						other.gameObject.GetComponent<BoxCollider2D> ().size.y+1.0f);
+						other.gameObject.GetComponent<BoxCollider2D> ().size.y+1.0f);*/
 
-		if ((other.gameObject.tag == "ground") && grounded && rigidbody2D.velocity.y<=15 ) {
+		float boxColliderSize = (GetComponent <BoxCollider2D>().size.y/2.0f)*transform.localScale.y;
+		float otherColliderSize = (other.gameObject.GetComponent<BoxCollider2D> ().size.y/2.0f) * other.gameObject.transform.localScale.y;
+
+		if ((other.gameObject.tag == "ground") && rigidbody2D.velocity.y<=15 && transform.position.y + boxColliderSize >= otherColliderSize + other.gameObject.transform.position.y ) {
 			onGround = true;
 		} 
 
