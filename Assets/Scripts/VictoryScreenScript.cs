@@ -52,7 +52,7 @@ public class VictoryScreenScript : MonoBehaviour {
 			Application.LoadLevel(Application.loadedLevelName);
 		}
 		
-        if((Application.loadedLevel + 1) != null || (Application.loadedLevel + 1) != 0) {
+        if(Application.loadedLevel < Application.levelCount - 1) {
             if(GUILayout.Button("Next Level")) {
                 Application.LoadLevel(Application.loadedLevel + 1);
             }
