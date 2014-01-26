@@ -861,8 +861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 5, y: 5}
   direction: {x: -1, y: 0}
-  isLinkedToCamera: 0
   isLooping: 0
+  isLinkedToRabbit: 1
 --- !u!1 &237946686
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,8 +962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: -.200000003
+  scaleIncrement: -.100000001
 --- !u!1 &239976160
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,7 +987,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 239976160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.9966507, y: -.0586073399, z: 0}
+  m_LocalPosition: {x: 32, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 0}
   m_Children: []
   m_Father: {fileID: 1939403300}
@@ -1691,8 +1691,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
   direction: {x: 0, y: 0}
-  isLinkedToCamera: 0
   isLooping: 0
+  isLinkedToRabbit: 0
 --- !u!1 &566035659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1792,8 +1792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: -.200000003
+  scaleIncrement: -.100000001
 --- !u!1 &591834917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,7 +1809,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &591834918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2121,6 +2121,7 @@ GameObject:
   - 50: {fileID: 622176321}
   - 61: {fileID: 622176320}
   - 114: {fileID: 622176319}
+  - 95: {fileID: 622176323}
   m_Layer: 0
   m_Name: rabbitPrefab
   m_TagString: rabbit
@@ -2210,56 +2211,20 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 319d8eec25c4e774c819c71bcc02995e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &670673078
-GameObject:
+--- !u!95 &622176323
+Animator:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 670673079}
-  - 212: {fileID: 670673080}
-  m_Layer: 0
-  m_Name: background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &670673079
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 670673078}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.5124855, y: .358373642, z: 0}
-  m_LocalScale: {x: 1.77471197, y: 1.77471197, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1939403300}
---- !u!212 &670673080
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 670673078}
+  m_GameObject: {fileID: 622176317}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d7637ae2a00a16e40b5310b7308fa77e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f0a79b359dfc54e4eba9de0b33ca8752, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 0
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &676523098
 Prefab:
   m_ObjectHideFlags: 0
@@ -3389,8 +3354,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1033652758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.86860657, y: .438900948, z: 0}
-  m_LocalScale: {x: 1.77471185, y: 1.77471578, z: 1}
+  m_LocalPosition: {x: -48, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 0}
   m_Children: []
   m_Father: {fileID: 1939403300}
 --- !u!212 &1033652760
@@ -4025,8 +3990,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: -.200000003
+  scaleIncrement: -.100000001
 --- !u!1 &1307653416
 GameObject:
   m_ObjectHideFlags: 0
@@ -6010,7 +5975,6 @@ Transform:
   m_Children:
   - {fileID: 1033652759}
   - {fileID: 239976161}
-  - {fileID: 670673079}
   m_Father: {fileID: 38866913}
 --- !u!114 &1939403301
 MonoBehaviour:
@@ -6018,15 +5982,15 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1939403299}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c1e1ec7915fd476fa6b21935e4128d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 1, y: 1}
   direction: {x: -1, y: 0}
-  isLinkedToCamera: 0
   isLooping: 1
+  isLinkedToRabbit: 0
 --- !u!1001 &1976429550
 Prefab:
   m_ObjectHideFlags: 0

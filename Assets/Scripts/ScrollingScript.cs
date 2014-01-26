@@ -7,6 +7,7 @@ using UnityEngine;
 /// </summary>
 public class ScrollingScript : MonoBehaviour
 {
+	private float speedFactor = 5;
 	/// <summary>
 	/// Scrolling speed
 	/// </summary>
@@ -18,23 +19,28 @@ public class ScrollingScript : MonoBehaviour
 	public Vector2 direction = new Vector2(-1, 0);
 	
 	/// <summary>
-	/// Movement should be applied to camera
-	/// </summary>
-	public bool isLinkedToCamera = false;
-	
-	/// <summary>
 	/// 1 - Background is infinite
 	/// </summary>
 	public bool isLooping = false;
+
+	public bool isLinkedToRabbit = false;
 	
 	/// <summary>
 	/// 2 - List of children with a renderer.
 	/// </summary>
 	private List<Transform> backgroundPart;
+
+	GameObject[] rabbits;
+	GameObject rabbitPrefab;
 	
 	// 3 - Get all the children
 	void Start()
 	{
+		if (rabbits == null) {
+			rabbits = GameObject.FindGameObjectsWithTag ("rabbit");
+			rabbitPrefab = rabbits[0];
+		}
+
 		// For infinite background only
 		if (isLooping)
 		{
@@ -64,7 +70,11 @@ public class ScrollingScript : MonoBehaviour
 	
 	void Update()
 	{
+		Debug.Log (rabbitPrefab.rigidbody2D.mass);
 		// Movement
+		if (isLinkedToRabbit) {
+			speed.x = (1.8f - rabbitPrefab.rigidbody2D.mass) * speedFactor;
+		}
 		Vector3 movement = new Vector3(
 			speed.x * direction.x,
 			speed.y * direction.y,
@@ -72,12 +82,6 @@ public class ScrollingScript : MonoBehaviour
 		
 		movement *= Time.deltaTime;
 		transform.Translate(movement);
-		
-		// Move the camera
-		if (isLinkedToCamera)
-		{
-			Camera.main.transform.Translate(movement);
-		}
 		
 		// 4 - Loop
 		if (isLooping)
