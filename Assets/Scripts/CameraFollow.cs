@@ -52,7 +52,7 @@ public class CameraFollow : MonoBehaviour
 			targetY = Mathf.Lerp(transform.position.y, player.position.y, Time.deltaTime);
 
 		// The target x and y coordinates should not be larger than the maximum or smaller than the minimum.
-		targetY = Mathf.Clamp(targetY, minXAndY.y, maxXAndY.y);
+		//targetY = Mathf.Clamp(targetY, minXAndY.y, maxXAndY.y);
 
 		// Set the camera's position to the target position with the same z component.
 		transform.position = new Vector3(0, targetY, transform.position.z);
