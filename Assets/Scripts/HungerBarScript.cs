@@ -44,13 +44,12 @@ public class HungerBarScript : MonoBehaviour {
 		sliderHeight = (int) hungerRect.height;
 
 		maxLength = hungerRect.width * 2 - 10;
-		//print ("Length:" + maxLength);
 
 		GUI.BeginGroup (new Rect (hungerRect.x + 2, hungerRect.y, maxLength, sliderHeight));
 		GUI.backgroundColor = Color.blue;
 
 		// energy slider
-		GUI.Box(new Rect(length, 0, sliderWidth, sliderHeight), "", energySlider);
+		GUI.Box(new Rect(length/2, 0, sliderWidth, sliderHeight), "", energySlider);
 
 		GUI.EndGroup();
 	}
@@ -68,7 +67,7 @@ public class HungerBarScript : MonoBehaviour {
 
 	}
 	public void gameStart() {
-		currEnergy = maxEnergy;
+		currEnergy = maxEnergy/2;
 		this.winLossScreen = false;
 	}
 

@@ -1484,7 +1484,7 @@ GameObject:
   - 114: {fileID: 287739047}
   m_Layer: 0
   m_Name: wallPrefab
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1496,7 +1496,7 @@ Transform:
   m_PrefabInternal: {fileID: 2104220864}
   m_GameObject: {fileID: 287739045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.8621559, y: -.10477066, z: 0}
+  m_LocalPosition: {x: 25, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1618568159}
@@ -1512,6 +1512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17302a8143dc9ee45bd1ece4f89a3809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bustedWall: {fileID: 21300000, guid: f002803e65b53a04ea64e7add4570098, type: 3}
 --- !u!61 &287739048
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2984,6 +2985,7 @@ MonoBehaviour:
   shrinkRate: .00100000005
   tooMuchMass: 2
   tooLittleMass: 0
+  enoughToBreakWall: 1
 --- !u!61 &622176320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4776,6 +4778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17302a8143dc9ee45bd1ece4f89a3809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bustedWall: {fileID: 21300000, guid: f002803e65b53a04ea64e7add4570098, type: 3}
 --- !u!61 &1018939413
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5879,6 +5882,11 @@ Prefab:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: f807a33441daf6c418f37f203169c572,
+        type: 3}
+    - target: {fileID: 11400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
+      propertyPath: bustedWall
+      value: 
+      objectReference: {fileID: 21300000, guid: f002803e65b53a04ea64e7add4570098,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
@@ -8203,8 +8211,8 @@ Transform:
   m_LocalPosition: {x: 18.9533424, y: 5.08360863, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1018939411}
   - {fileID: 287739046}
+  - {fileID: 1018939411}
   m_Father: {fileID: 494399833}
 --- !u!114 &1618568160
 MonoBehaviour:
@@ -8859,6 +8867,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
       propertyPath: m_FixedAngle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 336728d838514b745a57a0d6776bf816, type: 2}
+      propertyPath: enoughToBreakWall
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10476,11 +10488,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 59.8621559
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.10477066
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10501,6 +10513,15 @@ Prefab:
     - target: {fileID: 400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
+      propertyPath: bustedWall
+      value: 
+      objectReference: {fileID: 21300000, guid: f002803e65b53a04ea64e7add4570098,
+        type: 3}
+    - target: {fileID: 100000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c93850b1f09c9414eb082485a8021ee2, type: 2}
