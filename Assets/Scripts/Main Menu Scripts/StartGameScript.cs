@@ -24,5 +24,6 @@ public class StartGameScript : MonoBehaviour {
 
 	void OnMouseDown () {
 		print ("Start Game!");
+		Application.LoadLevel (1);
 	}
 }
