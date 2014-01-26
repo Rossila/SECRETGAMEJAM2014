@@ -18,17 +18,21 @@ public class HungerBarScript : MonoBehaviour {
 	private int sliderHeight;
 	private int sliderWidth = 5;
 
+	private bool winLossScreen;
+
 	// Use this for initialization
 	void Start () {
 		GameManager.GameStart += gameStart;
 		GameManager.GameOver += gameOver;
+		GameManager.GameWin += gameWin;
+		Time.timeScale = 1;
 		gameStart ();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		GameObject rabbit = GameObject.FindGameObjectWithTag ("rabbit");
-		if (rabbit != null) {
+		if (rabbit != null && !winLossScreen) {
 			AdjustCurrEnergy (GameObject.FindGameObjectWithTag("rabbit").rigidbody2D.mass);
 		}
 	}
@@ -63,11 +67,17 @@ public class HungerBarScript : MonoBehaviour {
 		length = (currEnergy / maxEnergy) * maxLength;
 
 	}
-	public void gameStart(){
-				currEnergy = maxEnergy;
-		}
-	public void gameOver(){
-	
+	public void gameStart() {
+		currEnergy = maxEnergy;
+		this.winLossScreen = false;
+	}
+
+	public void gameOver() {
+		this.winLossScreen = true;
+	}
+
+	void gameWin () {
+		this.winLossScreen = true;
 	}
 
 	public Rect BoundsToScreenRect(Bounds bounds)
