@@ -15,6 +15,7 @@ public class CollectibleScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "rabbit"){
 			other.gameObject.rigidbody2D.mass += massIncrement;
+			other.gameObject.GetComponent<BoxCollider2D>().size += new Vector2(scaleIncrement, scaleIncrement);
 			other.gameObject.transform.localScale += new Vector3(scaleIncrement, scaleIncrement, 0);
 		}
 		gameObject.SetActive(false);
