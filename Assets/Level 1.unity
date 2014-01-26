@@ -865,8 +865,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 5, y: 5}
   direction: {x: -1, y: 0}
-  isLinkedToCamera: 0
   isLooping: 0
+  isLinkedToRabbit: 1
 --- !u!1 &237946686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,8 +1695,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
   direction: {x: 0, y: 0}
-  isLinkedToCamera: 0
   isLooping: 0
+  isLinkedToRabbit: 0
 --- !u!1 &566035659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,7 +1813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &591834918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5961,15 +5961,15 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1939403299}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c1e1ec7915fd476fa6b21935e4128d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 1, y: 1}
   direction: {x: -1, y: 0}
-  isLinkedToCamera: 0
   isLooping: 1
+  isLinkedToRabbit: 0
 --- !u!1001 &1976429550
 Prefab:
   m_ObjectHideFlags: 0
@@ -6115,9 +6115,9 @@ Transform:
   m_LocalPosition: {x: -9.78819561, y: 8.72882652, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1274802393}
-  - {fileID: 566035662}
   - {fileID: 237946689}
+  - {fileID: 566035662}
+  - {fileID: 1274802393}
   m_Father: {fileID: 1687098537}
 --- !u!1 &2073700381
 GameObject:
