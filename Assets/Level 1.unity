@@ -1971,6 +1971,7 @@ GameObject:
   - 50: {fileID: 622176321}
   - 61: {fileID: 622176320}
   - 114: {fileID: 622176319}
+  - 95: {fileID: 622176323}
   m_Layer: 0
   m_Name: rabbitPrefab
   m_TagString: rabbit
@@ -1986,7 +1987,7 @@ Transform:
   m_GameObject: {fileID: 622176317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.993494, y: -3.65592384, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .400000006, y: .400000006, z: 1}
   m_Children: []
   m_Father: {fileID: 541288566}
 --- !u!114 &622176319
@@ -2001,7 +2002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3102de1530db2f04b99ce9419cef731f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startScale: {x: 1, y: 1, z: 1}
+  startScale: {x: .400000006, y: .400000006, z: 1}
   jumpSpeed: {x: 0, y: 350}
   constantSpeed: {x: 0, y: 0}
   gameOverY: -10
@@ -2018,7 +2019,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.44000006, y: 1.24000001}
+  m_Size: {x: 5.5, y: 4}
   m_Center: {x: 0, y: 0}
 --- !u!50 &622176321
 Rigidbody2D:
@@ -2058,8 +2059,22 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 13f880fbe9f94e745b3e5a45b5ae865e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 319d8eec25c4e774c819c71bcc02995e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!95 &622176323
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 622176317}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f0a79b359dfc54e4eba9de0b33ca8752, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 0
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &676523098
 Prefab:
   m_ObjectHideFlags: 0
@@ -2430,14 +2445,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1617128293}
+  - {fileID: 817914371}
   - {fileID: 678999359}
+  - {fileID: 763441301}
   - {fileID: 300314462}
+  - {fileID: 1917931733}
   - {fileID: 256862337}
   - {fileID: 98907501}
-  - {fileID: 763441301}
-  - {fileID: 817914371}
   - {fileID: 1185593441}
-  - {fileID: 1917931733}
   m_Father: {fileID: 1687098537}
 --- !u!1 &817914368
 GameObject:
@@ -4004,12 +4019,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1ff7ff4ce484f1aad8887efed74b11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xMargin: 1
-  yMargin: 1
-  xSmooth: 8
-  ySmooth: 8
-  maxXAndY: {x: 5, y: 5}
-  minXAndY: {x: -5, y: -5}
 --- !u!1 &1347270000
 GameObject:
   m_ObjectHideFlags: 0
