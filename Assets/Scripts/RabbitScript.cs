@@ -48,7 +48,11 @@ public class RabbitScript : MonoBehaviour {
 	// get a scale percentage based on the mass
 	float massToScale(float mass) {
 		float maxMass = 1.6f;
-		return 1f - (maxMass - mass);
+
+		// for our percentage calculation
+		float min = 0.3f;
+		float max = 1.0f;
+		return ((1f - (maxMass - mass)) * (max - min)) + min;
 	}
 
 	void Update()
