@@ -7,7 +7,7 @@ public class HungerBarScript : MonoBehaviour {
 	private float length;
 
 	// energy
-	private float maxEnergy = 100f;
+	private float maxMass = 100f;
 	private float currEnergy;
 
 	// slider offset to fit the energy bar
@@ -55,19 +55,19 @@ public class HungerBarScript : MonoBehaviour {
 	}
 	
 	public void AdjustCurrEnergy(float i) {
-		currEnergy = i*50;
-		
-		if (currEnergy < 0) {
-			currEnergy = 0;
-		} else if (currEnergy > maxEnergy) {
-			currEnergy = maxEnergy;
-		}
+//		currEnergy = i*50;
+//		
+//		if (currEnergy < 0) {
+//			currEnergy = 0;
+//		} else if (currEnergy > maxEnergy) {
+//			currEnergy = maxEnergy;
+//		}
 
-		length = (currEnergy / maxEnergy) * maxLength;
+		length = (1f - (1.6f - i)) * maxLength;
 
 	}
 	public void gameStart() {
-		currEnergy = maxEnergy/2;
+		currEnergy = maxMass/2;
 		this.winLossScreen = false;
 	}
 
