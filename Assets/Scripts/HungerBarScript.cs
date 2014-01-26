@@ -40,7 +40,7 @@ public class HungerBarScript : MonoBehaviour {
 		sliderHeight = (int) hungerRect.height;
 
 		maxLength = hungerRect.width * 2 - 10;
-		print ("Length:" + maxLength);
+		//print ("Length:" + maxLength);
 
 		GUI.BeginGroup (new Rect (hungerRect.x + 2, hungerRect.y, maxLength, sliderHeight));
 		GUI.backgroundColor = Color.blue;

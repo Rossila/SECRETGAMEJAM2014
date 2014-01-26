@@ -67,6 +67,17 @@ public class RabbitScript : MonoBehaviour {
 
 	}
 
+	void OnTriggerEnter2D(Collider2D collider) {
+		// check for null pointer references
+		if (collider == null) {
+			return;
+		}
+
+		if (collider.gameObject.tag == "enemy") {
+			GameManager.TriggerGameOver();
+		}
+	}
+
 	void gameStart()
 	{
 		transform.localPosition = startPosition;
