@@ -65,5 +65,11 @@ public class CollectibleScript : MonoBehaviour {
 	{
 		
 	}
+
+	void OnDestroy()
+	{
+		GameManager.GameStart -= gameStart;
+		GameManager.GameOver -= gameOver;
+	}
 	
 }

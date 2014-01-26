@@ -62,7 +62,6 @@ public class HungerBarScript : MonoBehaviour {
 
 		length = (currEnergy / maxEnergy) * maxLength;
 
-		//print ("Length :" + length);
 	}
 	public void gameStart(){
 				currEnergy = maxEnergy;

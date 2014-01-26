@@ -48,16 +48,20 @@ public class RabbitScript : MonoBehaviour {
 	
 	}
 
-	bool hitWall()
+	bool isGrounded()
 	{
 		Vector2 currentPosition = new Vector2 (transform.position.x, transform.position.y);
-		RaycastHit2D hit = Physics2D.Raycast(currentPosition + Vector2.right*0.73f, Vector2.right, 0.1f);
-		Debug.Log (hit.collider.tag);
-		return hit;
+		float boxColliderSize = GetComponent <BoxCollider2D>().size.y;
+		//RaycastHit2D hit = Physics2D.Raycast(currentPosition + -Vector2.up*boxColliderSize + new Vector2(0f, -0.1f), -Vector2.up, 0.4f);
+		//Debug.Log (boxColliderSize);
+		//Debug.Log (currentPosition + -Vector2.up * boxColliderSize + new Vector2 (0f, -0.1f));
+		//return hit;
+		return Physics2D.Raycast(currentPosition + -Vector2.up + new Vector2(0f, -0.1f), -Vector2.up, 0.1f);
 	}
 
 	void OnCollisionEnter2D(Collision2D other){
-		if ((other.gameObject.tag == "ground")) {
+
+		if ((other.gameObject.tag == "ground") && isGrounded ()) {
 			onGround = true;
 		} 
 
@@ -75,5 +79,9 @@ public class RabbitScript : MonoBehaviour {
 		rigidbody2D.velocity = Vector2.zero;
 		gameObject.SetActive(false);
 	}
-	
+
+	void OnDestroy(){
+		GameManager.GameStart -= gameStart;
+		GameManager.GameOver -= gameOver;
+	}
 }

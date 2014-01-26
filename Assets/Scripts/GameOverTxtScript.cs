@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class GameOverTxtScript : MonoBehaviour {
 
@@ -15,12 +14,21 @@ public class GameOverTxtScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		offset = new Vector2(Screen.width/2, Screen.height/2);
+		GameManager.GameStart += gameStart;
+		GameManager.GameOver += gameOver;
+		gameStart ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+
+	void gameOver()
+	{
+		gameObject.SetActive (true);
 	}
+
+	void gameStart()
+	{
+		gameObject.SetActive (false);
+	}	
 
 	void OnGUI() {
 
@@ -49,5 +57,9 @@ public class GameOverTxtScript : MonoBehaviour {
 		GUILayout.EndHorizontal ();
 		GUI.EndGroup ();
 
+	}
+	void OnDestroy(){
+		GameManager.GameStart -= gameStart;
+		GameManager.GameOver -= gameOver;
 	}
 }

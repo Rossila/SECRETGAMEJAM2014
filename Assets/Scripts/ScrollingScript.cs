@@ -78,8 +78,7 @@ public class ScrollingScript : MonoBehaviour
 
 		float newSpeedX = speed.x * (1 / rabbit.rigidbody2D.mass);
 		float newSpeedY = speed.y * (1 / rabbit.rigidbody2D.mass);
-
-		Debug.Log (rabbitPrefab.rigidbody2D.mass);
+	
 
 		// Movement
 		if (isLinkedToRabbit) {
