@@ -861,8 +861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 5, y: 5}
   direction: {x: -1, y: 0}
-  isLinkedToCamera: 0
   isLooping: 0
+  isLinkedToRabbit: 1
 --- !u!1 &237946686
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,8 +962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: -.200000003
+  scaleIncrement: -.100000001
 --- !u!1 &239976160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,8 +1691,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
   direction: {x: 0, y: 0}
-  isLinkedToCamera: 0
   isLooping: 0
+  isLinkedToRabbit: 0
 --- !u!1 &566035659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1792,8 +1792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: -.200000003
+  scaleIncrement: -.100000001
 --- !u!1 &591834917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,6 +2211,20 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 319d8eec25c4e774c819c71bcc02995e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!95 &622176323
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 622176317}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f0a79b359dfc54e4eba9de0b33ca8752, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 0
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &670673078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,20 +2275,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: d7637ae2a00a16e40b5310b7308fa77e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!95 &622176323
-Animator:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 622176317}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f0a79b359dfc54e4eba9de0b33ca8752, type: 2}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 0
-  m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
 --- !u!1001 &676523098
 Prefab:
   m_ObjectHideFlags: 0
@@ -4040,8 +4040,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: .100000001
-  scaleIncrement: .100000001
+  massIncrement: -.200000003
+  scaleIncrement: -.100000001
 --- !u!1 &1307653416
 GameObject:
   m_ObjectHideFlags: 0
@@ -6040,8 +6040,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 1, y: 1}
   direction: {x: -1, y: 0}
-  isLinkedToCamera: 0
   isLooping: 1
+  isLinkedToRabbit: 0
 --- !u!1001 &1976429550
 Prefab:
   m_ObjectHideFlags: 0
