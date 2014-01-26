@@ -71,9 +71,13 @@ MonoBehaviour:
   jumpSpeed: {x: 0, y: 350}
   constantSpeed: {x: 0, y: 0}
   gameOverY: -10
+  gameOverX: 0
   startMass: 1
-  tooMuchMass: 3
+  shrinkRate: 0
+  tooMuchMass: 2
   tooLittleMass: 0
+  minToBreakWall: 1.5
+  maxToPassTree: .5
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -16,7 +16,8 @@ public class RabbitScript : MonoBehaviour {
 	public float tooMuchMass;
 	public float tooLittleMass;
 
-	public float enoughToBreakWall;
+	public float minToBreakWall;
+	public float maxToPassTree;
 
 	private bool onGround;
 	private Vector2 startPosition;
@@ -73,9 +74,14 @@ public class RabbitScript : MonoBehaviour {
 			onGround = true;
 		} 
 
-		if (other.gameObject.tag == "wall" && rigidbody2D.mass >= enoughToBreakWall) {
+		if (other.gameObject.tag == "wall" && rigidbody2D.mass >= minToBreakWall) {
 			WallScript[] ws = other.gameObject.GetComponents<WallScript>();
 			ws[0].BustWall();
+		}
+
+		if (other.gameObject.tag == "tree" && rigidbody2D.mass >= maxToPassTree) {
+			TreeScript[] ts = other.gameObject.GetComponents<TreeScript>();
+			ts[0].MovePastTree();
 		}
 		
 	}

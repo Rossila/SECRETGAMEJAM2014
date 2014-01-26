@@ -12,4 +12,8 @@ public class TreeScript : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	public void MovePastTree() {
+		transform.collider2D.isTrigger = true;
+	}
 }
