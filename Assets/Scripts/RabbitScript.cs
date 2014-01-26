@@ -7,6 +7,8 @@ public class RabbitScript : MonoBehaviour {
 
 	public Vector2 jumpSpeed;
 	public Vector2 constantSpeed;
+
+	public static bool forceGround = false;
 	
 	public float gameOverY;
 	public float gameOverX;
@@ -49,7 +51,7 @@ public class RabbitScript : MonoBehaviour {
 		//gameObject.GetComponent<BoxCollider2D> ().size -= new Vector2 (shrinkRate, shrinkRate);
 		if(transform.localScale.x > 0)
 			transform.localScale -= new Vector3 (shrinkRate/2, shrinkRate/2, 0);
-		if(Input.GetButtonDown("Jump") && onGround){
+		if(Input.GetButtonDown("Jump") && onGround && !forceGround){
 			anim.SetBool ("Jump", true);
 			gameObject.audio.Play ();
 			rigidbody2D.AddForce(jumpSpeed);
@@ -98,21 +100,27 @@ public class RabbitScript : MonoBehaviour {
 		}
 
 		if (other.gameObject.tag == "tree" && rigidbody2D.mass <= maxToPassTree) {
+			forceGround = true;
 			TreeScript[] ts = other.gameObject.GetComponents<TreeScript>();
 			ts[0].MovePastTree();
 		}
+		if (other.gameObject.tag == "undo forceground") {
+			UndoForceGround[] fs= other.gameObject.GetComponents<UndoForceGround>();
+			fs[0].releaseForceGround();
+		}
 		
 	}
+	
 
 	void OnTriggerEnter2D(Collider2D collider) {
 		// check for null pointer references
 		if (collider == null) {
 			return;
 		}
-
 		if (collider.gameObject.tag == "enemy") {
 			GameManager.TriggerGameOver();
 		}
+
 	}
 
 	void gameStart()

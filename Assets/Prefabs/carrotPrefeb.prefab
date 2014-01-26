@@ -73,8 +73,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0299999993
-  scaleIncrement: -.0299999993
+  massIncrement: -.0599999987
+  scaleIncrement: -.0599999987
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:

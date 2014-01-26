@@ -423,7 +423,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -505,6 +505,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 7430ded8415c6544496ac0cdbc590e31, type: 2}
       propertyPath: m_Center.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 7430ded8415c6544496ac0cdbc590e31, type: 2}
+      propertyPath: m_FixedAngle
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1105,8 +1109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0299999993
-  scaleIncrement: -.0299999993
+  massIncrement: -.0599999987
+  scaleIncrement: -.0599999987
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!1 &239976160
 GameObject:
@@ -2710,8 +2714,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0299999993
-  scaleIncrement: -.0299999993
+  massIncrement: -.0599999987
+  scaleIncrement: -.0599999987
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!1 &591834917
 GameObject:
@@ -3996,6 +4000,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .821029902
       objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 7430ded8415c6544496ac0cdbc590e31, type: 2}
+      propertyPath: m_FixedAngle
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7430ded8415c6544496ac0cdbc590e31, type: 2}
   m_RootGameObject: {fileID: 84039937}
@@ -4173,8 +4181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0299999993
-  scaleIncrement: -.0299999993
+  massIncrement: -.0599999987
+  scaleIncrement: -.0599999987
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &883786171
 PolygonCollider2D:
@@ -4315,6 +4323,72 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 39857062}
+--- !u!1 &912250631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 912250632}
+  - 50: {fileID: 912250634}
+  - 61: {fileID: 912250633}
+  - 114: {fileID: 912250635}
+  m_Layer: 0
+  m_Name: Undo forceground
+  m_TagString: undo forceground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &912250632
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 912250631}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 108.956306, y: -5.18233204, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1687098537}
+--- !u!61 &912250633
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 912250631}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
+--- !u!50 &912250634
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 912250631}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!114 &912250635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 912250631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13147eb102e9d5e4ab090a0b43b8dadc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &934564256
 GameObject:
   m_ObjectHideFlags: 0
@@ -4506,8 +4580,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0299999993
-  scaleIncrement: -.0299999993
+  massIncrement: -.0599999987
+  scaleIncrement: -.0599999987
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &983349499
 PolygonCollider2D:
@@ -5409,7 +5483,7 @@ Transform:
   m_PrefabInternal: {fileID: 1976429550}
   m_GameObject: {fileID: 1185593438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 121.364685, y: -3.50774479, z: 0}
+  m_LocalPosition: {x: 121.128967, y: -3.46060133, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 809983017}
@@ -5545,7 +5619,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -5615,8 +5689,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0299999993
-  scaleIncrement: -.0299999993
+  massIncrement: -.0599999987
+  scaleIncrement: -.0599999987
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1227135054
 PolygonCollider2D:
@@ -5918,7 +5992,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1274387038
 Transform:
   m_ObjectHideFlags: 0
@@ -6101,8 +6175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0299999993
-  scaleIncrement: -.0299999993
+  massIncrement: -.0599999987
+  scaleIncrement: -.0599999987
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!1 &1346096479
 GameObject:
@@ -7532,8 +7606,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0299999993
-  scaleIncrement: -.0299999993
+  massIncrement: -.0599999987
+  scaleIncrement: -.0599999987
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1499958566
 PolygonCollider2D:
@@ -7690,8 +7764,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0299999993
-  scaleIncrement: -.0299999993
+  massIncrement: -.0599999987
+  scaleIncrement: -.0599999987
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1550544836
 PolygonCollider2D:
@@ -7865,8 +7939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dbb6aff87ce8e45873658ad5d65c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  massIncrement: -.0299999993
-  scaleIncrement: -.0299999993
+  massIncrement: -.0599999987
+  scaleIncrement: -.0599999987
   clip: {fileID: 8300000, guid: ba6731ba8be78cb49bfcf448433aca9d, type: 3}
 --- !u!60 &1571382127
 PolygonCollider2D:
@@ -8349,6 +8423,7 @@ Transform:
   - {fileID: 809983017}
   - {fileID: 2069440437}
   - {fileID: 1716581828}
+  - {fileID: 912250632}
   m_Father: {fileID: 494399833}
 --- !u!114 &1687098538
 MonoBehaviour:
@@ -9645,11 +9720,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: d1180134d6caaaf439a3670367b0bac5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 121.364685
+      value: 121.128967
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d1180134d6caaaf439a3670367b0bac5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.50774479
+      value: -3.46060133
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d1180134d6caaaf439a3670367b0bac5, type: 2}
       propertyPath: m_LocalPosition.z

@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class TreeScript : MonoBehaviour {
+public class UndoForceGround : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,8 +12,11 @@ public class TreeScript : MonoBehaviour {
 	
 	}
 
-	public void MovePastTree() {
+		// Use this for initialization
+	public void releaseForceGround(){
+		Debug.Log ("Test");
 		transform.collider2D.isTrigger = true;
+		RabbitScript.forceGround = false;
 	}
 
 }
